@@ -1,0 +1,512 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+@font-face {
+  font-family: 'Arnorg';
+  src: url('./fonts/ARNORG_.TTF') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* Puedes aplicarla específicamente al navbar */
+.navbar-nav {
+  font-family: 'Arnorg', sans-serif;
+  color: rgb(102, 51, 51);
+
+}
+.nav-link {
+    font-family: 'Arnorg', sans-serif;
+    font-size: 1.2em; /* Ajusta este valor para cambiar el tamaño de la fuente */
+    font-weight: bold; /* Esto hará que el texto sea más grueso */
+    color: rgb(102, 51, 51);
+}
+
+.titulo-responsive{
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 300; /* Light weight */ 
+  color: gray;
+  font-size: 2rem;
+}
+.body{
+  overflow-x: hidden;
+}
+@media (max-width: 600px) {
+  .titulo-responsive {
+      font-size: 2rem; /* Ajusta el tamaño según tus necesidades */
+  }
+}
+.no-gutters {
+  margin-right: 0;
+  margin-left: 0;
+}
+
+.no-gutters > .col, .no-gutters > [class*="col-"] {
+  padding-right: 0;
+  padding-left: 0;
+}
+
+.property-link {
+  display: block; /* Asegura que el enlace ocupe todo el espacio de la columna */
+  width: 100%; /* Asegura que el enlace ocupe todo el ancho disponible */
+  height: 100%; /* Asegura que el enlace ocupe todo el alto disponible */
+}
+
+.img-fluid {
+  width: 100%; /* Hace que la imagen sea responsive y se ajuste al ancho de su contenedor */
+  height: 100%; /* Ocupa todo el alto del enlace */
+  object-fit: contain; /* Mantiene la imagen entera visible, ajustando su tamaño proporcionalmente */
+  object-position: center; /* Centra la imagen dentro de su contenedor */
+  border-radius: 15px;
+}
+.contacto-section {
+  position: relative;
+  background-image: url('../images/contacto/contacto.png');
+  background-repeat: no-repeat;
+  background-size: 100% auto; /* Ajusta el ancho al 100% y la altura automáticamente */
+  background-position: center center; /* Centra la imagen en ambas direcciones */
+  color: white;
+  min-height: 500px;
+  background-color:white;
+  font-family: 'Montserrat', sans-serif;
+  width: 100%;
+  padding: 50px 0; /* Ajusta el padding según sea necesario */
+  box-sizing: border-box; /* Incluye padding y border en el cálculo del ancho */
+}
+
+@media (max-width: 768px) {
+  .contacto-section {
+    background-image: url('../images/contacto/contacto_celular.png');
+    background-size: 100% auto; /* Ajusta el ancho al 100% y la altura automáticamente */
+    padding: 80px 0; /* Ajusta el padding según sea necesario */
+    height: 730px;
+
+  }
+
+  .qr-img {
+    display: none; /* Oculta la imagen del QR en pantallas pequeñas */
+  }
+
+  .social-icons {
+    position: absolute;
+    bottom: -600px;  /* Coloca el icono de Instagram 20px desde el fondo */
+    right: 20px;   /* Coloca el icono de Instagram 20px desde la derecha */
+    margin: 0;
+  }
+}
+.productos-section {
+  background-color: #f0f0f0;
+  padding: 20px 0;
+  text-align: center;
+}
+
+.productos-section img {
+  width: 100%;
+  max-width: 350px;
+  margin-bottom: 20px;
+}
+
+.productos-description {
+  font-family: 'Montserrat', sans-serif;
+  text-align: justify;
+  color: #000;
+  margin-bottom: 40px;
+  width: 80%; /* Reducir el largo del texto a un 80% */
+  margin-left: auto;
+  margin-right: auto; /* Centrar el texto */
+  padding: 0 20px;
+}
+
+/* Contenedor para centrar y juntar las imágenes */
+.productos-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px; /* Espacio entre las imágenes */
+  flex-wrap: wrap;
+}
+
+/* Estilos para las imágenes de perros y gatos */
+.perros-column img,
+.gatos-column img {
+  max-width: 400px; /* Mantén el tamaño original de las imágenes */
+  height: auto;
+  transition: transform 0.3s ease;
+}
+
+.perros-column img:hover,
+.gatos-column img:hover {
+  transform: scale(1.1); /* Efecto de zoom al pasar el mouse */
+}
+
+/* Margen inferior para separar las imágenes de productos de las imágenes de "pago contra entrega" */
+.productos-column {
+  margin-bottom: 50px;
+}
+
+.footer-img {
+  width: 100%;
+  max-width: 500px;
+  font-size: 1.5rem;
+}
+
+.footer-text {
+  font-size: 1.5rem;
+  color: #FFD700;
+}
+
+/* Media query para pantallas pequeñas */
+@media (max-width: 768px) {
+  .productos-container {
+      flex-direction: column; /* Poner las imágenes una encima de la otra en pantallas pequeñas */
+  }
+
+  .perros-column img,
+  .gatos-column img {
+      max-width: 400px; /* Mantén el tamaño original en dispositivos pequeños */
+  }
+
+  .productos-column {
+      margin-bottom: 20px; /* Ajustar el margen entre las imágenes en pantallas pequeñas */
+  }
+}
+
+
+.contacto-section h3,
+.contacto-section p,
+.contacto-section a,
+.contacto-section h6 {
+  font-family: 'Montserrat', sans-serif;
+}
+
+
+.contacto-section::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+
+.contacto-section .container-fluid {
+  position: relative;
+  z-index: 2;
+}
+
+.logo-icon {
+  width: 250px; /* Ajusta el tamaño del logo aquí */
+  height: auto;
+}
+.custom-carousel {
+  height: 70vh; /* Ocupa la mitad de la altura de la pantalla */
+  overflow: hidden;
+}
+.custom-carousel .carousel-inner {
+  height: 100%;
+}
+.custom-carousel .carousel-item {
+  height: 100%;
+}
+.custom-carousel img {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 100%;
+  height: auto;
+}
+.nosotros-section {
+  padding: 2rem 0;
+}
+.text-column {
+  text-align: center;
+}
+
+.col-inicio img {
+  max-width: 100%;
+  height: auto;
+}
+.logo-icon {
+    width: 250px; /* Ajusta el tamaño del logo aquí */
+    height: auto;
+}
+.nosotros-section {
+    padding: 2rem 0;
+}
+.text-column {
+    text-align: center;
+}
+.property-link {
+    position: relative;
+    display: block;
+    color: white;
+    text-decoration: none;
+}
+.property-link img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+.property-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    transition: background-color 0.3s ease;
+}
+.property-overlay span {
+    font-family: 'Montserrat', sans-serif;   
+    font-size: 2rem;
+    font-weight: bold;
+    z-index: 1;
+}
+.property-link:hover .property-overlay {
+    background-color: rgba(0, 0, 0, 0.7);
+}
+.logo-icon {
+  width: 250px; /* Ajusta el tamaño del logo aquí */
+  height: auto;
+}
+.nosotros-section {
+  padding: 2rem 0;
+}
+.text-column {
+  text-align: center;
+}
+.property-link {
+  position: relative;
+  display: block;
+  color: white;
+  text-decoration: none;
+}
+.property-link img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+}
+.property-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.5);
+  transition: background-color 0.3s ease;
+}
+.property-overlay span {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 2rem;
+  font-weight: bold;
+  z-index: 1;
+}
+.property-link:hover .property-overlay {
+  background-color: rgba(0, 0, 0, 0.7);
+}
+.border-box {
+  padding: 10px;
+  border-radius: 0px; /* Bordes redondeados */
+}
+.texto-property-item {
+  font-family: 'Montserrat', sans-serif;
+  margin: 0; /* Elimina el margen */
+  min-height: 350px; /* Altura mínima vertical */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  color: #333; /* Ajusta el color del texto */
+}
+
+.btn-ver-producto {
+  background-color: #90EE90; /* Verde claro */
+  color: black;
+  border-radius: 10px;
+  width: 95%;
+  padding: 10px;
+}
+
+.btn-lo-quiero {
+  background-color: #FF6347; /* Rojo */
+  color: white;
+  border-radius: 10px;
+  width: 95%;
+  padding: 10px;
+}
+.property-item {
+  border-radius: 15px; /* Bordes redondeados para la tarjeta */
+  overflow: hidden; /* Asegura que el contenido no desborde los bordes redondeados */
+  transition: transform 0.3s ease-in-out;
+  padding: 20px;
+  background-color: #fff; /* Fondo blanco para la tarjeta */
+  text-align: center; /* Centramos el contenido */
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.property-item:hover {
+  transform: scale(1.05); /* Efecto de agrandamiento al pasar el mouse */
+}
+.img-wrapper img {
+  border-radius: 15px; /* Bordes redondeados para la imagen */
+  width: 100%;
+  height: auto;
+  object-fit: cover; /* Ajuste de imagen dentro del contenedor */
+  box-shadow: none; /* Eliminar el sombreado oscuro alrededor de la imagen */
+}
+.custom-carousel {
+  height: 70vh; /* Ocupa el 70% de la altura de la pantalla */
+  overflow: hidden;
+}
+.custom-carousel .carousel-inner {
+  height: 100%;
+}
+.custom-carousel .carousel-item {
+  height: 100%;
+}
+.custom-carousel img {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 100%;
+  height: auto;
+}
+
+input[type="range"] {
+  -webkit-appearance: none;
+  width: 200px;
+  height: 8px;
+  background: #d3d3d3;
+  outline: none;
+  opacity: 0.7;
+  transition: opacity .15s ease-in-out;
+  border-radius: 5px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+input[type="range"]:hover {
+  opacity: 1;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 15px;
+  height: 15px;
+  background: #4CAF50;
+  cursor: pointer;
+  border-radius: 50%;
+}
+
+input[type="range"]::-moz-range-thumb {
+  width: 25px;
+  height: 25px;
+  background: #4CAF50;
+  cursor: pointer;
+  border-radius: 50%;
+}
+.contacto-title {
+  font-weight: bold; 
+  width: 70%; 
+  margin-left: 5%; 
+  margin-top: 50px; 
+  display: flex; 
+  justify-content: center; 
+  color: #FFD700; 
+  padding: 70px; 
+  font-size: 100px; 
+  text-shadow: -1px -1px 0 #000000, 1px -1px 0 #000000, -1px 1px 0 #000000, 1px 1px 0 #000000;
+}
+
+.qr-img {
+  padding-top: 300px; 
+  width: 50%; 
+  max-width: 200px;
+}
+
+.contacto-text {
+  font-size: 1.1rem; 
+  padding: 20px; 
+  text-align: justify; 
+  color: white;
+}
+
+.whatsapp-link {
+  font-size: 1.5rem; 
+  text-align: center; 
+  background-color: #25D366; 
+  text-decoration: none; 
+  color: white; 
+  padding: 10px 20px; 
+  border-radius: 10px;
+}
+.nosotros-section {
+  background-color: #ffffff;
+  padding: 50px 0;
+}
+
+.nosotros-section img {
+  max-width: 30%;
+  height: auto;
+  margin-bottom: 30px;
+}
+
+.nosotros-section p {
+  font-family: 'Montserrat', sans-serif;
+  text-align: justify;
+  color: #000000;
+  width: 85%;
+  margin: 0 auto;
+}
+
+@media (max-width: 768px) {
+  .nosotros-section img {
+      max-width: 60%;
+  }
+}
+/* Media Queries */
+@media (max-width: 768px) {
+  .contacto-title {
+    font-size: 40px;
+    padding: 20px;
+    width: 100%;
+    margin: 0;
+  }
+  .qr-img {
+    margin-left: 0; 
+    width: 50%; 
+    max-width: 150px;
+  }
+  .contacto-text {
+    font-size: 1rem;
+    padding: 10px;
+  }
+  .whatsapp-link {
+    font-size: 1.2rem;
+    padding: 8px 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  .contacto-title {
+    font-size: 50px;
+    padding: 10px;
+  }
+  .qr-img {
+    width: 80%; 
+    max-width: 100px;
+  }
+  .contacto-text {
+    font-size: 0.9rem;
+    padding: 5px;
+  }
+  .whatsapp-link {
+    font-size: 1rem;
+    padding: 5px 10px;
+  }
+}

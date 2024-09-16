@@ -1,0 +1,2640 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="static/style.css"> <!-- Asegúrate de que styles.css esté en el mismo nivel que images -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="icon" href="images/favicon.png" type="image/x-icon">
+    <title>Comprar</title>
+</head>
+<body style="overflow-x: hidden;">
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light" style="height: 100px; background-color: #ffffff; border-bottom: 2px solid #ccc;">
+        <a class="navbar-brand" href="index.html">
+            <img src="images/logo_puppy.png" alt="Logo MrtPuppy" id="logolargo" class="logo-icon" style="width:250px;">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="modal" data-target="#menuModal" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation" style="background-color: white;">
+            <span class="navbar-toggler-icon" style="background-color: white;"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="about.html" style="color: rgb(102, 51, 51); font-family: 'Arnorg', sans-serif;">NOSOTROS</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html" style="color: rgb(102, 51, 51);font-family: 'Arnorg', sans-serif;">PRODUCTOS</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#Contacto" style="color: rgb(102, 51, 51);font-family: 'Arnorg', sans-serif;">CONTACTO</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Modal Menú -->
+    <div class="modal fade" id="menuModal" tabindex="-1" aria-labelledby="menuModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="menuModalLabel">Menú</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="about.html">NOSOTROS</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">PRODUCTOS</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#Contacto">CONTACTO</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ========================= SECTION PAGETOP ========================= -->
+    <section class="section-pagetop bg" style="background-color: #e0e0e0;">
+        <div class="container-fluid" style="background-color: #35363A; text-align: center; justify-content: center; padding: 20px;">
+            <form method="GET" action="buscar.html" class="form-inline d-flex justify-content-center align-items-center flex-wrap">
+                <input class="form-control mr-sm-2 mb-2 mb-sm-0" type="search" name="q" placeholder="Buscar PRODUCTO..." aria-label="Buscar" style="width: 100%; max-width: 400px;">
+                <div class="form-group ml-3 mb-2 mb-sm-0">
+                    <label for="input" style="color: #FCE88D;">¿Cuál es tu Presupuesto Máximo?</label>
+                    <input id="input" type="range" value="0" min="0" max="0" class="form-control-range" style="width: 200px;">
+                    <div id="etiqueta" style="color: #FCE88D;"></div>
+                </div>
+            </form>
+        </div> <!-- container //  -->
+    </section>
+    <!-- ========================= SECTION INTRO END// ========================= -->
+    <div class="container-fluid" style="background-color: #e1e1e1; padding:20px;">
+        <section class="productos-section text-center">
+            <img src="images/perros/productos_en_venta.png" alt="Título Productos" style="min-width: 40%; height: auto;">
+            
+        </section>      
+    </div>
+    <!-- ========================= SECTION CONTENT ========================= -->
+    <div class="container">
+        <div class="row">
+                <!-- ========================= 1 ========================= -->
+            <div class="col-lg-4 col-md-4 col-sm-6 col-12 property-item" data-price="34000" data-is-furniture="true" style="margin-top: 20px; margin-bottom: 20px;">
+                <div class="img-location-agency border-box">
+                    <div class="img-wrapper" style="background-image: url('images/perros/1.png'); background-size: cover; background-position: center;">
+                    </div>
+                    <div class="texto-locations">
+                        <img src="images/perros/1.png" style="border:2px solid #B4B4B4; text-align: center; height:300px; width:100%;" alt="PRODUCTO de Ejemplo 26" class="img-fluid">
+                        <h3 style="text-align: center;">Arnés Pitbull con Placa</h3>
+                        <p style="text-align: center;">con argolla: $34.000</p>
+                        <h5 class="precio-formatear" style="text-align: center;">36000</h5>
+                        <div class="row">
+                            <div class="col-md-6" style="text-align: center;">
+                                <a href="#" class="btn" style="background-color: rgb(102, 51, 51); color: rgb(255, 190, 4); font-weight: bold; width: 95%; padding:10px 8px;" data-toggle="modal" data-target="#propertyModal1">VER PRODUCTO</a>
+                            </div>  
+                            <div class="col-md-6" style="text-align: center;">
+                                <a href="https://wa.me/573207028443?text=Holaa,%20estoy%20interesado%20en%20el%20producto:%20Arnés%20Pitbull%20con%20Placa" class="btn" style="background-color: rgb(255, 190, 4); color: rgb(102, 51, 51); font-weight: bold; width: 95%; padding: 10px;">LO QUIERO!</a>                            </div>  
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- ========================= 2 ========================= -->
+
+            <div class="col-lg-4 col-md-4 col-sm-6 col-12 property-item" data-price="32000" data-is-furniture="true" style="margin-top: 20px; margin-bottom: 20px;">
+                <div class="img-location-agency border-box">
+                    <div class="img-wrapper" style="background-image: url('images/perros/2.png'); background-size: cover; background-position: center;">
+                    </div>
+                    <div class="texto-locations">
+                        <img src="images/perros/2.png" style="border:2px solid #B4B4B4; text-align: center; height:300px; width:100%;" alt="PRODUCTO de Ejemplo 52" class="img-fluid">
+                        <h3 style="text-align: center;">Arnés Pitbull Seguridad </h3>
+                        <p style="text-align: center;">Con o sin Moño</p>
+                        <h5 class="precio-formatear" style="text-align: center;">32000</h5>
+                        <div class="row">
+                            <div class="col-md-6" style="text-align: center;">
+                                <a href="#" class="btn" style="background-color: rgb(102, 51, 51); color: rgb(255, 190, 4); font-weight: bold; width: 95%; padding: 10px 8px;" data-toggle="modal" data-target="#propertyModal2">VER PRODUCTO</a>
+                            </div>  
+                            <div class="col-md-6" style="text-align: center;">
+                                <a href="https://wa.me/573207028443?text=Holaa,%20estoy%20interesado%20en%20el%20producto:%20Arnés%20Pitbull%20Seguridad" class="btn" style="background-color: rgb(255, 190, 4); color: rgb(102, 51, 51); font-weight: bold; width: 95%; padding: 10px;">LO QUIERO!</a>                            </div> 
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- ========================= 3 ========================= -->
+            <div class="col-lg-4 col-md-4 col-sm-6 col-12 property-item" data-price="55000" data-is-furniture="true" style="margin-top: 20px; margin-bottom: 20px;">
+                <div class="img-location-agency border-box">
+                    <div class="img-wrapper" style="background-image: url('images/perros/3.png'); background-size: cover; background-position: center;">
+                    </div>
+                    <div class="texto-locations">
+                        <img src="images/perros/3.png" style="border:2px solid #B4B4B4; text-align: center; height:300px; width:100%;" alt="PRODUCTO de Ejemplo 53" class="img-fluid">
+                        <h3 style="text-align: center;">Arnés Pitbull Lazo</h3>
+                        <h5 class="precio-formatear" style="text-align: center;">55000</h5>
+                        <div class="row">
+                            <div class="col-md-6" style="text-align: center;">
+                                <a href="#" class="btn" style="background-color: rgb(102, 51, 51); color: rgb(255, 190, 4); font-weight: bold; width: 95%; padding: 10px 8px;" data-toggle="modal" data-target="#propertyModal3">VER PRODUCTO</a>
+                            </div>  
+                            <div class="col-md-6" style="text-align: center;">
+                                <a href="https://wa.me/573207028443?text=Holaa,%20estoy%20interesado%20en%20el%20producto:%20Arnés%20Pitbull%20Lazo" class="btn" style="background-color: rgb(255, 190, 4); color: rgb(102, 51, 51); font-weight: bold; width: 95%; padding: 10px;">LO QUIERO!</a>
+                            </div>  
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- ========================= 4 ========================= -->
+            <div class="col-lg-4 col-md-4 col-sm-6 col-12 property-item" data-price="46200" data-is-furniture="true" style="margin-top: 20px; margin-bottom: 20px;">
+                <div class="img-location-agency border-box">
+                    <div class="img-wrapper" style="background-image: url('images/perros/4.png'); background-size: cover; background-position: center;">
+                    </div>
+                    <div class="texto-locations">
+                        <img src="images/perros/4.png" style="border:2px solid #B4B4B4; text-align: center; height:300px; width:100%;" alt="PRODUCTO de Ejemplo 54" class="img-fluid">
+                        <h3 style="text-align: center;">Arnés Pitbull Cosido</h3>
+                        <h5 class="precio-formatear" style="text-align: center;">46200</h5>
+                        <div class="row">
+                            <div class="col-md-6" style="text-align: center;">
+                                <a href="#" class="btn" style="background-color: rgb(102, 51, 51); color: rgb(255, 190, 4); font-weight: bold; width: 95%; padding: 10px 8px;" data-toggle="modal" data-target="#propertyModal4">VER PRODUCTO</a>
+                            </div>  
+                            <div class="col-md-6" style="text-align: center;">
+                                <a href="https://wa.me/573207028443?text=Holaa,%20estoy%20interesado%20en%20el%20producto:%20Arnés%20Pitbull%20Cosido" class="btn" style="background-color: rgb(255, 190, 4); color: rgb(102, 51, 51); font-weight: bold; width: 95%; padding: 10px;">LO QUIERO!</a>
+                            </div> 
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- ========================= 5 ========================= -->
+            <div class="col-lg-4 col-md-4 col-sm-6 col-12 property-item" data-price="31000" data-is-furniture="true" style="margin-top: 20px; margin-bottom: 20px;">
+                <div class="img-location-agency border-box">
+                    <div class="img-wrapper" style="background-image: url('images/perros/5.png'); background-size: cover; background-position: center;">
+                    </div>
+                    <div class="texto-locations">
+                        <img src="images/perros/5.png" style="border:2px solid #B4B4B4; text-align: center; height:300px; width:100%;" alt="PRODUCTO de Ejemplo 55" class="img-fluid">
+                        <h3 style="text-align: center;">Arnés Combinado 1 1/4" </h3>
+                        <p style="text-align: center;">Combinado 1": $31.000</p>
+                        <h5 class="precio-formatear" style="text-align: center;">34000</h5>
+                        <div class="row">
+                            <div class="col-md-6" style="text-align: center;">
+                                <a href="#" class="btn" style="background-color: rgb(102, 51, 51); color: rgb(255, 190, 4); font-weight: bold; width: 95%; padding: 10px 8px;" data-toggle="modal" data-target="#propertyModal5">VER PRODUCTO</a>
+                            </div>  
+                            <div class="col-md-6" style="text-align: center;">
+                                <a href="https://wa.me/573207028443?text=Holaa,%20estoy%20interesado%20en%20el%20producto:%20Arnés%20Combinado%201%201/4%22" class="btn" style="background-color: rgb(255, 190, 4); color: rgb(102, 51, 51); font-weight: bold; width: 95%; padding: 10px;">LO QUIERO!</a>
+                            </div> 
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- ========================= 6 ========================= -->
+            <div class="col-lg-4 col-md-4 col-sm-6 col-12 property-item" data-price="27000" data-is-furniture="true" style="margin-top: 20px; margin-bottom: 20px;">
+                <div class="img-location-agency border-box">
+                    <div class="img-wrapper" style="background-image: url('images/perros/6.png'); background-size: cover; background-position: center;">
+                    </div>
+                    <div class="texto-locations">
+                        <img src="images/perros/6.png" style="border:2px solid #B4B4B4; text-align: center; height:300px; width:100%;" alt="PRODUCTO de Ejemplo 56" class="img-fluid">
+                        <h3 style="text-align: center;">Arnés Yute 1 1/2"</h3>
+                        <p style="text-align: center;">De 5/8: $27.000</p>
+                        <h5 class="precio-formatear" style="text-align: center;">70000</h5>
+                        <div class="row">
+                            <div class="col-md-6" style="text-align: center;">
+                                <a href="#" class="btn" style="background-color: rgb(102, 51, 51); color: rgb(255, 190, 4); font-weight: bold; width: 95%; padding: 10px 8px;" data-toggle="modal" data-target="#propertyModal6">VER PRODUCTO</a>
+                            </div>  
+                            <div class="col-md-6" style="text-align: center;">
+                                <a href="https://wa.me/573207028443?text=Holaa,%20estoy%20interesado%20en%20el%20producto:%20Arnés%20Yute%201%201/2%22" class="btn" style="background-color: rgb(255, 190, 4); color: rgb(102, 51, 51); font-weight: bold; width: 95%; padding: 10px;">LO QUIERO!</a>
+                            </div> 
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- ========================= 7 ========================= -->
+            <div class="col-lg-4 col-md-4 col-sm-6 col-12 property-item" data-price="21000" data-is-furniture="true" style="margin-top: 20px; margin-bottom: 20px;">
+                <div class="img-location-agency border-box">
+                    <div class="img-wrapper" style="background-image: url('images/perros/7.png'); background-size: cover; background-position: center;">
+                    </div>
+                    <div class="texto-locations">
+                        <img src="images/perros/7.png" style="border:2px solid #B4B4B4; text-align: center; height:300px; width:100%;" alt="PRODUCTO de Ejemplo 57" class="img-fluid">
+                        <h3 style="text-align: center;">Arnés Cosido 1</h3>
+                        <p style="text-align: center;">De 3/4: $27.000<br>De 5/8: $21.000</p>
+                        <h5 class="precio-formatear" style="text-align: center;">33000</h5>
+                        <div class="row">
+                            <div class="col-md-6" style="text-align: center;">
+                                <a href="#" class="btn" style="background-color: rgb(102, 51, 51); color: rgb(255, 190, 4); font-weight: bold; width: 95%; padding: 10px 8px;" data-toggle="modal" data-target="#propertyModal7">VER PRODUCTO</a>
+                            </div>  
+                            <div class="col-md-6" style="text-align: center;">
+                                <a href="https://wa.me/573207028443?text=Holaa,%20estoy%20interesado%20en%20el%20producto:%20Arnés%20Cosido%201" class="btn" style="background-color: rgb(255, 190, 4); color: rgb(102, 51, 51); font-weight: bold; width: 95%; padding: 10px;">LO QUIERO!</a>
+                            </div> 
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- ========================= 8 ========================= -->
+            <div class="col-lg-4 col-md-4 col-sm-6 col-12 property-item" data-price="38000" data-is-furniture="true" style="margin-top: 20px; margin-bottom: 20px;">
+                <div class="img-location-agency border-box">
+                    <div class="img-wrapper" style="background-image: url('images/perros/8.png'); background-size: cover; background-position: center;">
+                    </div>
+                    <div class="texto-locations">
+                        <img src="images/perros/8.png" style="border:2px solid #B4B4B4; text-align: center; height:300px; width:100%;" alt="PRODUCTO de Ejemplo 58" class="img-fluid">
+                        <h3 style="text-align: center;">Arnés Multicolor</h3>
+                        <h5 class="precio-formatear" style="text-align: center;">38000</h5>
+                        <div class="row">
+                            <div class="col-md-6" style="text-align: center;">
+                                <a href="#" class="btn" style="background-color: rgb(102, 51, 51); color: rgb(255, 190, 4); font-weight: bold; width: 95%; padding: 10px 8px;" data-toggle="modal" data-target="#propertyModal8">VER PRODUCTO</a>
+                            </div>  
+                            <div class="col-md-6" style="text-align: center;">
+                                <a href="https://wa.me/573207028443?text=Holaa,%20estoy%20interesado%20en%20el%20producto:%20Arnés%20Multicolor" class="btn" style="background-color: rgb(255, 190, 4); color: rgb(102, 51, 51); font-weight: bold; width: 95%; padding: 10px;">LO QUIERO!</a>
+                            </div> 
+                        </div>
+                    </div>
+                </div>
+            </div>
+                        <!-- ========================= 9 ========================= -->
+            <div class="col-lg-4 col-md-4 col-sm-6 col-12 property-item" data-price="26000" style="margin-top: 20px; margin-bottom: 20px;">
+                <div class="img-location-agency border-box">
+                    <div class="img-wrapper" style="background-image: url('images/perros/9.png'); background-size: cover; background-position: center;">
+                    </div>
+                    <div class="texto-locations">
+                        <img src="images/perros/9.png" style="border:2px solid #B4B4B4; text-align: center; height:300px; width:100%;" alt="Producto de Ejemplo 9" class="img-fluid">
+                        <h3 style="text-align: center;">Arnés Puntos 5/8</h3>
+                        <p style="text-align: center;">De 3/4: $34.000</p>
+                        <h5 class="precio-formatear" style="text-align: center;">26000</h5>
+                        <div class="row">
+                            <div class="col-md-6" style="text-align: center;">
+                                <a href="#" class="btn" style="background-color: rgb(102, 51, 51); color: rgb(255, 190, 4); font-weight: bold; width: 95%; padding:10px 8px;" data-toggle="modal" data-target="#propertyModal9">VER PRODUCTO</a>
+                            </div>  
+                            <div class="col-md-6" style="text-align: center;">
+                                <a href="https://wa.me/573207028443?text=Holaa,%20estoy%20interesado%20en%20el%20producto:%20Arnés%20Puntos%205/8" class="btn" style="background-color: rgb(255, 190, 4); color: rgb(102, 51, 51); font-weight: bold; width: 95%; padding: 10px;">LO QUIERO!</a>
+                            </div>  
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ========================= 10 ========================= -->
+            <div class="col-lg-4 col-md-4 col-sm-6 col-12 property-item" data-price="26000" style="margin-top: 20px; margin-bottom: 20px;">
+                <div class="img-location-agency border-box">
+                    <div class="img-wrapper" style="background-image: url('images/perros/10.png'); background-size: cover; background-position: center;">
+                    </div>
+                    <div class="texto-locations">
+                        <img src="images/perros/10.png" style="border:2px solid #B4B4B4; text-align: center; height:300px; width:100%;" alt="Producto de Ejemplo 10" class="img-fluid">
+                        <h3 style="text-align: center;">Arnés Reflectivo 5/8</h3>
+                        <h5 class="precio-formatear" style="text-align: center;">26000</h5>
+                        <div class="row">
+                            <div class="col-md-6" style="text-align: center;">
+                                <a href="#" class="btn" style="background-color: rgb(102, 51, 51); color: rgb(255, 190, 4); font-weight: bold; width: 95%; padding:10px 8px;" data-toggle="modal" data-target="#propertyModal10">VER PRODUCTO</a>
+                            </div>  
+                            <div class="col-md-6" style="text-align: center;">
+                                <a href="https://wa.me/573207028443?text=Holaa,%20estoy%20interesado%20en%20el%20producto:%20Arnés%20Reflectivo%205/8" class="btn" style="background-color: rgb(255, 190, 4); color: rgb(102, 51, 51); font-weight: bold; width: 95%; padding: 10px;">LO QUIERO!</a>
+                            </div>  
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ========================= 11 ========================= -->
+            <div class="col-lg-4 col-md-4 col-sm-6 col-12 property-item" data-price="16000" style="margin-top: 20px; margin-bottom: 20px;">
+                <div class="img-location-agency border-box">
+                    <div class="img-wrapper" style="background-image: url('images/perros/11.png'); background-size: cover; background-position: center;">
+                    </div>
+                    <div class="texto-locations">
+                        <img src="images/perros/11.png" style="border:2px solid #B4B4B4; text-align: center; height:300px; width:100%;" alt="Producto de Ejemplo 11" class="img-fluid">
+                        <h3 style="text-align: center;">Arnés Huellas 1</h3>
+                        <p style="text-align: center;">De 3/4: $19.000<br>De 5/8: $16.000</p>
+                        <h5 class="precio-formatear" style="text-align: center;">21000</h5>
+                        <div class="row">
+                            <div class="col-md-6" style="text-align: center;">
+                                <a href="#" class="btn" style="background-color: rgb(102, 51, 51); color: rgb(255, 190, 4); font-weight: bold; width: 95%; padding:10px 8px;" data-toggle="modal" data-target="#propertyModal11">VER PRODUCTO</a>
+                            </div>  
+                            <div class="col-md-6" style="text-align: center;">
+                                <a href="https://wa.me/573207028443?text=Holaa,%20estoy%20interesado%20en%20el%20producto:%20Arnés%20Huellas%201" class="btn" style="background-color: rgb(255, 190, 4); color: rgb(102, 51, 51); font-weight: bold; width: 95%; padding: 10px;">LO QUIERO!</a>
+                            </div>  
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ========================= 12 ========================= -->
+            <div class="col-lg-4 col-md-4 col-sm-6 col-12 property-item" data-price="11000" style="margin-top: 20px; margin-bottom: 20px;">
+                <div class="img-location-agency border-box">
+                    <div class="img-wrapper" style="background-image: url('images/perros/12.png'); background-size: cover; background-position: center;">
+                    </div>
+                    <div class="texto-locations">
+                        <img src="images/perros/12.png" style="border:2px solid #B4B4B4; text-align: center; height:300px; width:100%;" alt="Producto de Ejemplo 12" class="img-fluid">
+                        <h3 style="text-align: center;">Pechero Huella 1</h3>  
+                        <p style="text-align: center;">De 3/4: $13.200<br>De 5/8: $11.000</p>
+                        <h5 class="precio-formatear" style="text-align: center;">16000</h5>
+                        <div class="row">
+                            <div class="col-md-6" style="text-align: center;">
+                                <a href="#" class="btn" style="background-color: rgb(102, 51, 51); color: rgb(255, 190, 4); font-weight: bold; width: 95%; padding:10px 8px;" data-toggle="modal" data-target="#propertyModal12">VER PRODUCTO</a>
+                            </div>  
+                            <div class="col-md-6" style="text-align: center;">
+                                <a href="https://wa.me/573207028443?text=Holaa,%20estoy%20interesado%20en%20el%20producto:%20Pechero%20Huellas%201" class="btn" style="background-color: rgb(255, 190, 4); color: rgb(102, 51, 51); font-weight: bold; width: 95%; padding: 10px;">LO QUIERO!</a>
+                            </div>  
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ========================= 13 ========================= -->
+            <div class="col-lg-4 col-md-4 col-sm-6 col-12 property-item" data-price="13000" style="margin-top: 20px; margin-bottom: 20px;">
+                <div class="img-location-agency border-box">
+                    <div class="img-wrapper" style="background-image: url('images/perros/13.png'); background-size: cover; background-position: center;">
+                    </div>
+                    <div class="texto-locations">
+                        <img src="images/perros/13.png" style="border:2px solid #B4B4B4; text-align: center; height:300px; width:100%;" alt="Producto de Ejemplo 13" class="img-fluid">
+                        <h3 style="text-align: center;">Correa Huella 1</h3>                    
+                        <p style="text-align: center;">De 3/4: $9.000<br>De 5/8: $6.500</p>
+                        <h5 class="precio-formatear" style="text-align: center;">10000</h5>
+                        <div class="row">
+                            <div class="col-md-6" style="text-align: center;">
+                                <a href="#" class="btn" style="background-color: rgb(102, 51, 51); color: rgb(255, 190, 4); font-weight: bold; width: 95%; padding:10px 8px;" data-toggle="modal" data-target="#propertyModal13">VER PRODUCTO</a>
+                            </div>  
+                            <div class="col-md-6" style="text-align: center;">
+                                <a href="https://wa.me/573207028443?text=Holaa,%20estoy%20interesado%20en%20el%20producto:%20Correa%20Huellas%201" class="btn" style="background-color: rgb(255, 190, 4); color: rgb(102, 51, 51); font-weight: bold; width: 95%; padding: 10px;">LO QUIERO!</a>
+                            </div>  
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ========================= 14 ========================= -->
+            <div class="col-lg-4 col-md-4 col-sm-6 col-12 property-item" data-price="18000" style="margin-top: 20px; margin-bottom: 20px;">
+                <div class="img-location-agency border-box">
+                    <div class="img-wrapper" style="background-image: url('images/perros/14.png'); background-size: cover; background-position: center;">
+                    </div>
+                    <div class="texto-locations">
+                        <img src="images/perros/14.png" style="border:2px solid #B4B4B4; text-align: center; height:300px; width:100%;" alt="Producto de Ejemplo 14" class="img-fluid">
+                        <h3 style="text-align: center;">Arnés Pincher Fino</h3>
+                        <h5 class="precio-formatear" style="text-align: center;">18000</h5>
+                        <div class="row">
+                            <div class="col-md-6" style="text-align: center;">
+                                <a href="#" class="btn" style="background-color: rgb(102, 51, 51); color: rgb(255, 190, 4); font-weight: bold; width: 95%; padding:10px 8px;" data-toggle="modal" data-target="#propertyModal14">VER PRODUCTO</a>
+                            </div>  
+                            <div class="col-md-6" style="text-align: center;">
+                                <a href="https://wa.me/573207028443?text=Holaa,%20estoy%20interesado%20en%20el%20producto:%20Arnés%20Pincher%20Fino" class="btn" style="background-color: rgb(255, 190, 4); color: rgb(102, 51, 51); font-weight: bold; width: 95%; padding: 10px;">LO QUIERO!</a>
+                            </div>  
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ========================= 15 ========================= -->
+            <div class="col-lg-4 col-md-4 col-sm-6 col-12 property-item" data-price="21000" style="margin-top: 20px; margin-bottom: 20px;">
+                <div class="img-location-agency border-box">
+                    <div class="img-wrapper" style="background-image: url('images/perros/15.png'); background-size: cover; background-position: center;">
+                    </div>
+                    <div class="texto-locations">
+                        <img src="images/perros/15.png" style="border:2px solid #B4B4B4; text-align: center; height:300px; width:100%;" alt="Producto de Ejemplo 15" class="img-fluid">
+                        <h3 style="text-align: center;">Arnés Pincher Lazo</h3>
+                        <h5 class="precio-formatear" style="text-align: center;">21000</h5>
+                        <div class="row">
+                            <div class="col-md-6" style="text-align: center;">
+                                <a href="#" class="btn" style="background-color: rgb(102, 51, 51); color: rgb(255, 190, 4); font-weight: bold; width: 95%; padding:10px 8px;" data-toggle="modal" data-target="#propertyModal15">VER PRODUCTO</a>
+                            </div>  
+                            <div class="col-md-6" style="text-align: center;">
+                                <a href="https://wa.me/573207028443?text=Holaa,%20estoy%20interesado%20en%20el%20producto:%20Arnés%20Pincher%20Lazo" class="btn" style="background-color: rgb(255, 190, 4); color: rgb(102, 51, 51); font-weight: bold; width: 95%; padding: 10px;">LO QUIERO!</a>
+                            </div>  
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ========================= 16 ========================= -->
+            <div class="col-lg-4 col-md-4 col-sm-6 col-12 property-item" data-price="11000" style="margin-top: 20px; margin-bottom: 20px;">
+                <div class="img-location-agency border-box">
+                    <div class="img-wrapper" style="background-image: url('images/perros/16.png'); background-size: cover; background-position: center;">
+                    </div>
+                    <div class="texto-locations">
+                        <img src="images/perros/16.png" style="border:2px solid #B4B4B4; text-align: center; height:300px; width:100%;" alt="Producto de Ejemplo 16" class="img-fluid">
+                        <h3 style="text-align: center;">Arnés Pincher Sencillo</h3>
+                        <h5 class="precio-formatear" style="text-align: center;">11000</h5>
+                        <div class="row">
+                            <div class="col-md-6" style="text-align: center;">
+                                <a href="#" class="btn" style="background-color: rgb(102, 51, 51); color: rgb(255, 190, 4); font-weight: bold; width: 95%; padding:10px 8px;" data-toggle="modal" data-target="#propertyModal16">VER PRODUCTO</a>
+                            </div>  
+                            <div class="col-md-6" style="text-align: center;">
+                                <a href="https://wa.me/573207028443?text=Holaa,%20estoy%20interesado%20en%20el%20producto:%20Arnés%20Pincher%20Sencillo" class="btn" style="background-color: rgb(255, 190, 4); color: rgb(102, 51, 51); font-weight: bold; width: 95%; padding: 10px;">LO QUIERO!</a>
+                            </div>  
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ========================= 17 ========================= -->
+            <div class="col-lg-4 col-md-4 col-sm-6 col-12 property-item" data-price="14000" style="margin-top: 20px; margin-bottom: 20px;">
+                <div class="img-location-agency border-box">
+                    <div class="img-wrapper" style="background-image: url('images/perros/17.png'); background-size: cover; background-position: center;">
+                    </div>
+                    <div class="texto-locations">
+                        <img src="images/perros/17.png" style="border:2px solid #B4B4B4; text-align: center; height:300px; width:100%;" alt="Producto de Ejemplo 17" class="img-fluid">
+                        <h3 style="text-align: center;">Arnés Gato Cosido</h3>
+                        <p style="text-align: center;">Sencillo: $8.400</p>
+                        <h5 class="precio-formatear" style="text-align: center;">14000</h5>
+                        <div class="row">
+                            <div class="col-md-6" style="text-align: center;">
+                                <a href="#" class="btn" style="background-color: rgb(102, 51, 51); color: rgb(255, 190, 4); font-weight: bold; width: 95%; padding:10px 8px;" data-toggle="modal" data-target="#propertyModal17">VER PRODUCTO</a>
+                            </div>  
+                            <div class="col-md-6" style="text-align: center;">
+                                <a href="https://wa.me/573207028443?text=Holaa,%20estoy%20interesado%20en%20el%20producto:%20Arnés%20Gato%20Cosido" class="btn" style="background-color: rgb(255, 190, 4); color: rgb(102, 51, 51); font-weight: bold; width: 95%; padding: 10px;">LO QUIERO!</a>
+                            </div>  
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ========================= 18 ========================= -->
+            <div class="col-lg-4 col-md-4 col-sm-6 col-12 property-item" data-price="32000" style="margin-top: 20px; margin-bottom: 20px;">
+                <div class="img-location-agency border-box">
+                    <div class="img-wrapper" style="background-image: url('images/perros/18.png'); background-size: cover; background-position: center;">
+                    </div>
+                    <div class="texto-locations">
+                        <img src="images/perros/18.png" style="border:2px solid #B4B4B4; text-align: center; height:300px; width:100%;" alt="Producto de Ejemplo 18" class="img-fluid">
+                        <h3 style="text-align: center;">Arnés Neon 1 </h3>
+                        <p style="text-align: center;">De 3/4: $32.000<br>De 1/4: $60.000</p>
+                        <h5 class="precio-formatear" style="text-align: center;">36000</h5>
+                        <div class="row">
+                            <div class="col-md-6" style="text-align: center;">
+                                <a href="#" class="btn" style="background-color: rgb(102, 51, 51); color: rgb(255, 190, 4); font-weight: bold; width: 95%; padding:10px 8px;" data-toggle="modal" data-target="#propertyModal18">VER PRODUCTO</a>
+                            </div>  
+                            <div class="col-md-6" style="text-align: center;">
+                                <a href="https://wa.me/573207028443?text=Holaa,%20estoy%20interesado%20en%20el%20producto:%20Arnés%20Neon%201" class="btn" style="background-color: rgb(255, 190, 4); color: rgb(102, 51, 51); font-weight: bold; width: 95%; padding: 10px;">LO QUIERO!</a>
+                            </div>  
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ========================= 19 ========================= -->
+            <div class="col-lg-4 col-md-4 col-sm-6 col-12 property-item" data-price="32000" style="margin-top: 20px; margin-bottom: 20px;">
+                <div class="img-location-agency border-box">
+                    <div class="img-wrapper" style="background-image: url('images/perros/19.png'); background-size: cover; background-position: center;">
+                    </div>
+                    <div class="texto-locations">
+                        <img src="images/perros/19.png" style="border:2px solid #B4B4B4; text-align: center; height:300px; width:100%;" alt="Producto de Ejemplo 19" class="img-fluid">
+                        <h3 style="text-align: center;">Arnés Estampado 1</h3>
+                        <p style="text-align: center;">De 3/4: $32.000</p>
+                        <h5 class="precio-formatear" style="text-align: center;">36000</h5>
+                        <div class="row">
+                            <div class="col-md-6" style="text-align: center;">
+                                <a href="#" class="btn" style="background-color: rgb(102, 51, 51); color: rgb(255, 190, 4); font-weight: bold; width: 95%; padding:10px 8px;" data-toggle="modal" data-target="#propertyModal19">VER PRODUCTO</a>
+                            </div>  
+                            <div class="col-md-6" style="text-align: center;">
+                                <a href="https://wa.me/573207028443?text=Holaa,%20estoy%20interesado%20en%20el%20producto:%20Arnés%20Estampado%201" class="btn" style="background-color: rgb(255, 190, 4); color: rgb(102, 51, 51); font-weight: bold; width: 95%; padding: 10px;">LO QUIERO!</a>
+                            </div>  
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ========================= 20 ========================= -->
+            <div class="col-lg-4 col-md-4 col-sm-6 col-12 property-item" data-price="23000" style="margin-top: 20px; margin-bottom: 20px;">
+                <div class="img-location-agency border-box">
+                    <div class="img-wrapper" style="background-image: url('images/perros/20.png'); background-size: cover; background-position: center;">
+                    </div>
+                    <div class="texto-locations">
+                        <img src="images/perros/20.png" style="border:2px solid #B4B4B4; text-align: center; height:300px; width:100%;" alt="Producto de Ejemplo 20" class="img-fluid">
+                        <h3 style="text-align: center;">Arnés Militar 1</h3>
+                        <p style="text-align: center;">De 3/4: $23.000<br>De 5/8: $18.000<br>De 1 1/2: $40.000</p>
+                        <h5 class="precio-formatear" style="text-align: center;">36000</h5>
+                        <div class="row">
+                            <div class="col-md-6" style="text-align: center;">
+                                <a href="#" class="btn" style="background-color: rgb(102, 51, 51); color: rgb(255, 190, 4); font-weight: bold; width: 95%; padding:10px 8px;" data-toggle="modal" data-target="#propertyModal20">VER PRODUCTO</a>
+                            </div>  
+                            <div class="col-md-6" style="text-align: center;">
+                                <a href="https://wa.me/573207028443?text=Holaa,%20estoy%20interesado%20en%20el%20producto:%20Arnés%20Militar%201" class="btn" style="background-color: rgb(255, 190, 4); color: rgb(102, 51, 51); font-weight: bold; width: 95%; padding: 10px;">LO QUIERO!</a>
+                            </div>  
+                        </div>
+                    </div>
+                </div>
+            </div>
+                        <!-- ========================= 21 ========================= -->
+            <div class="col-lg-4 col-md-4 col-sm-6 col-12 property-item" data-price="46000" style="margin-top: 20px; margin-bottom: 20px;">
+                <div class="img-location-agency border-box">
+                    <div class="img-wrapper" style="background-image: url('images/perros/21.png'); background-size: cover; background-position: center;">
+                    </div>
+                    <div class="texto-locations">
+                        <img src="images/perros/21.png" style="border:2px solid #B4B4B4; text-align: center; height:300px; width:100%;" alt="Producto de Ejemplo 21" class="img-fluid">
+                        <h3 style="text-align: center;">Combo Arnés 1 1/4</h3>
+                        <p style="text-align: center;">De 1: $48.000<br>De 3/4: $46.000</p>
+                        <h5 class="precio-formatear" style="text-align: center;">70000</h5>
+                        <div class="row">
+                            <div class="col-md-6" style="text-align: center;">
+                                <a href="#" class="btn" style="background-color: rgb(102, 51, 51); color: rgb(255, 190, 4); font-weight: bold; width: 95%; padding:10px 8px;" data-toggle="modal" data-target="#propertyModal21">VER PRODUCTO</a>
+                            </div>  
+                            <div class="col-md-6" style="text-align: center;">
+                                <a href="https://wa.me/573207028443?text=Holaa,%20estoy%20interesado%20en%20el%20producto:%20Combo%20Arnés%201%201/4" class="btn" style="background-color: rgb(255, 190, 4); color: rgb(102, 51, 51); font-weight: bold; width: 95%; padding: 10px;">LO QUIERO!</a>
+                            </div>  
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ========================= 22 ========================= -->
+            <div class="col-lg-4 col-md-4 col-sm-6 col-12 property-item" data-price="15000" style="margin-top: 20px; margin-bottom: 20px;">
+                <div class="img-location-agency border-box">
+                    <div class="img-wrapper" style="background-image: url('images/perros/22.png'); background-size: cover; background-position: center;">
+                    </div>
+                    <div class="texto-locations">
+                        <img src="images/perros/22.png" style="border:2px solid #B4B4B4; text-align: center; height:300px; width:100%;" alt="Producto de Ejemplo 22" class="img-fluid">
+                        <h3 style="text-align: center;">Arnés Dispositivo Sencillo 1/2</h3>
+                        <p style="text-align: center;">De 5/8: $16.000<br>De 3/4: $19.000</p>
+                        <h5 class="precio-formatear" style="text-align: center;">15000</h5>
+                        <div class="row">
+                            <div class="col-md-6" style="text-align: center;">
+                                <a href="#" class="btn" style="background-color: rgb(102, 51, 51); color: rgb(255, 190, 4); font-weight: bold; width: 95%; padding:10px 8px;" data-toggle="modal" data-target="#propertyModal22">VER PRODUCTO</a>
+                            </div>  
+                            <div class="col-md-6" style="text-align: center;">
+                                <a href="https://wa.me/573207028443?text=Holaa,%20estoy%20interesado%20en%20el%20producto:%20Arnés%20Dispositivo%20Sencillo%201/2" class="btn" style="background-color: rgb(255, 190, 4); color: rgb(102, 51, 51); font-weight: bold; width: 95%; padding: 10px;">LO QUIERO!</a>
+                            </div>  
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ========================= 23 ========================= -->
+            <div class="col-lg-4 col-md-4 col-sm-6 col-12 property-item" data-price="31000" style="margin-top: 20px; margin-bottom: 20px;">
+                <div class="img-location-agency border-box">
+                    <div class="img-wrapper" style="background-image: url('images/perros/23.png'); background-size: cover; background-position: center;">
+                    </div>
+                    <div class="texto-locations">
+                        <img src="images/perros/23.png" style="border:2px solid #B4B4B4; text-align: center; height:300px; width:100%;" alt="Producto de Ejemplo 23" class="img-fluid">
+                        <h3 style="text-align: center;">Arnés Dispositivo Neon 3/4</h3>
+                        <h5 class="precio-formatear" style="text-align: center;">31000</h5>
+                        <div class="row">
+                            <div class="col-md-6" style="text-align: center;">
+                                <a href="#" class="btn" style="background-color: rgb(102, 51, 51); color: rgb(255, 190, 4); font-weight: bold; width: 95%; padding:10px 8px;" data-toggle="modal" data-target="#propertyModal23">VER PRODUCTO</a>
+                            </div>  
+                            <div class="col-md-6" style="text-align: center;">
+                                <a href="https://wa.me/573207028443?text=Holaa,%20estoy%20interesado%20en%20el%20producto:%20Arnés%20Dispositivo%20Neon%203/4" class="btn" style="background-color: rgb(255, 190, 4); color: rgb(102, 51, 51); font-weight: bold; width: 95%; padding: 10px;">LO QUIERO!</a>
+                            </div>  
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ========================= 24 ========================= -->
+            <div class="col-lg-4 col-md-4 col-sm-6 col-12 property-item" data-price="35000" style="margin-top: 20px; margin-bottom: 20px;">
+                <div class="img-location-agency border-box">
+                    <div class="img-wrapper" style="background-image: url('images/perros/24.png'); background-size: cover; background-position: center;">
+                    </div>
+                    <div class="texto-locations">
+                        <img src="images/perros/24.png" style="border:2px solid #B4B4B4; text-align: center; height:300px; width:100%;" alt="Producto de Ejemplo 24" class="img-fluid">
+                        <h3 style="text-align: center;">Lazo Ahogo Grueso 1.40 cm</h3>
+                        <h5 class="precio-formatear" style="text-align: center;">35000</h5>
+                        <div class="row">
+                            <div class="col-md-6" style="text-align: center;">
+                                <a href="#" class="btn" style="background-color: rgb(102, 51, 51); color: rgb(255, 190, 4); font-weight: bold; width: 95%; padding:10px 8px;" data-toggle="modal" data-target="#propertyModal24">VER PRODUCTO</a>
+                            </div>  
+                            <div class="col-md-6" style="text-align: center;">
+                                <a href="https://wa.me/573207028443?text=Holaa,%20estoy%20interesado%20en%20el%20producto:%20Lazo%20Ahogo%20Grueso%201.40cm" class="btn" style="background-color: rgb(255, 190, 4); color: rgb(102, 51, 51); font-weight: bold; width: 95%; padding: 10px;">LO QUIERO!</a>
+                            </div>  
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ========================= 25 ========================= -->
+            <div class="col-lg-4 col-md-4 col-sm-6 col-12 property-item" data-price="40000" style="margin-top: 20px; margin-bottom: 20px;">
+                <div class="img-location-agency border-box">
+                    <div class="img-wrapper" style="background-image: url('images/perros/25.png'); background-size: cover; background-position: center;">
+                    </div>
+                    <div class="texto-locations">
+                        <img src="images/perros/25.png" style="border:2px solid #B4B4B4; text-align: center; height:300px; width:100%;" alt="Producto de Ejemplo 25" class="img-fluid">
+                        <h3 style="text-align: center;">Lazo Mosquetón Grueso 1.40 cm</h3>
+                        <h5 class="precio-formatear" style="text-align: center;">40000</h5>
+                        <div class="row">
+                            <div class="col-md-6" style="text-align: center;">
+                                <a href="#" class="btn" style="background-color: rgb(102, 51, 51); color: rgb(255, 190, 4); font-weight: bold; width: 95%; padding:10px 8px;" data-toggle="modal" data-target="#propertyModal25">VER PRODUCTO</a>
+                            </div>  
+                            <div class="col-md-6" style="text-align: center;">
+                                <a href="https://wa.me/573207028443?text=Holaa,%20estoy%20interesado%20en%20el%20producto:%20Lazo%20Mosquetón%20Grueso%201.40cm" class="btn" style="background-color: rgb(255, 190, 4); color: rgb(102, 51, 51); font-weight: bold; width: 95%; padding: 10px;">LO QUIERO!</a>
+                            </div>  
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ========================= 26 ========================= -->
+            <div class="col-lg-4 col-md-4 col-sm-6 col-12 property-item" data-price="17400" style="margin-top: 20px; margin-bottom: 20px;">
+                <div class="img-location-agency border-box">
+                    <div class="img-wrapper" style="background-image: url('images/perros/26.png'); background-size: cover; background-position: center;">
+                    </div>
+                    <div class="texto-locations">
+                        <img src="images/perros/26.png" style="border:2px solid #B4B4B4; text-align: center; height:300px; width:100%;" alt="Producto de Ejemplo 26" class="img-fluid">
+                        <h3 style="text-align: center;">Lazo Ahogo Delgado 1.40 cm</h3>
+                        <h5 class="precio-formatear" style="text-align: center;">17400</h5>
+                        <div class="row">
+                            <div class="col-md-6" style="text-align: center;">
+                                <a href="#" class="btn" style="background-color: rgb(102, 51, 51); color: rgb(255, 190, 4); font-weight: bold; width: 95%; padding:10px 8px;" data-toggle="modal" data-target="#propertyModal26">VER PRODUCTO</a>
+                            </div>  
+                            <div class="col-md-6" style="text-align: center;">
+                                <a href="https://wa.me/573207028443?text=Holaa,%20estoy%20interesado%20en%20el%20producto:%20Lazo%20Ahogo%20Delgado%201.40cm" class="btn" style="background-color: rgb(255, 190, 4); color: rgb(102, 51, 51); font-weight: bold; width: 95%; padding: 10px;">LO QUIERO!</a>
+                            </div>  
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ========================= 27 ========================= -->
+            <div class="col-lg-4 col-md-4 col-sm-6 col-12 property-item" data-price="21000" style="margin-top: 20px; margin-bottom: 20px;">
+                <div class="img-location-agency border-box">
+                    <div class="img-wrapper" style="background-image: url('images/perros/27.png'); background-size: cover; background-position: center;">
+                    </div>
+                    <div class="texto-locations">
+                        <img src="images/perros/27.png" style="border:2px solid #B4B4B4; text-align: center; height:300px; width:100%;" alt="Producto de Ejemplo 27" class="img-fluid">
+                        <h3 style="text-align: center;">Lazo Mosquetón Delgado 1.40 cm</h3>
+                        <h5 class="precio-formatear" style="text-align: center;">21000</h5>
+                        <div class="row">
+                            <div class="col-md-6" style="text-align: center;">
+                                <a href="#" class="btn" style="background-color: rgb(102, 51, 51); color: rgb(255, 190, 4); font-weight: bold; width: 95%; padding:10px 8px;" data-toggle="modal" data-target="#propertyModal27">VER PRODUCTO</a>
+                            </div>  
+                            <div class="col-md-6" style="text-align: center;">
+                                <a href="https://wa.me/573207028443?text=Holaa,%20estoy%20interesado%20en%20el%20producto:%20Lazo%20Mosquetón%20Delgado%201.40cm" class="btn" style="background-color: rgb(255, 190, 4); color: rgb(102, 51, 51); font-weight: bold; width: 95%; padding: 10px;">LO QUIERO!</a>
+                            </div>  
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ========================= 28 ========================= -->
+            <div class="col-lg-4 col-md-4 col-sm-6 col-12 property-item" data-price="13000" style="margin-top: 20px; margin-bottom: 20px;">
+                <div class="img-location-agency border-box">
+                    <div class="img-wrapper" style="background-image: url('images/perros/28.png'); background-size: cover; background-position: center;">
+                    </div>
+                    <div class="texto-locations">
+                        <img src="images/perros/28.png" style="border:2px solid #B4B4B4; text-align: center; height:300px; width:100%;" alt="Producto de Ejemplo 28" class="img-fluid">
+                        <h3 style="text-align: center;">Bozal Grande</h3>
+                        <p style="text-align: center;">Mediano: $13.000<br>Pequeño: $10.000</p>
+                        <h5 class="precio-formatear" style="text-align: center;">15000</h5>
+                        <div class="row">
+                            <div class="col-md-6" style="text-align: center;">
+                                <a href="#" class="btn" style="background-color: rgb(102, 51, 51); color: rgb(255, 190, 4); font-weight: bold; width: 95%; padding:10px 8px;" data-toggle="modal" data-target="#propertyModal28">VER PRODUCTO</a>
+                            </div>  
+                            <div class="col-md-6" style="text-align: center;">
+                                <a href="https://wa.me/573207028443?text=Holaa,%20estoy%20interesado%20en%20el%20producto:%20Bozal%20Grande" class="btn" style="background-color: rgb(255, 190, 4); color: rgb(102, 51, 51); font-weight: bold; width: 95%; padding: 10px;">LO QUIERO!</a>
+                            </div>  
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ========================= 29 ========================= -->
+            <div class="col-lg-4 col-md-4 col-sm-6 col-12 property-item" data-price="3000" style="margin-top: 20px; margin-bottom: 20px;">
+                <div class="img-location-agency border-box">
+                    <div class="img-wrapper" style="background-image: url('images/perros/29.png'); background-size: cover; background-position: center;">
+                    </div>
+                    <div class="texto-locations">
+                        <img src="images/perros/29.png" style="border:2px solid #B4B4B4; text-align: center; height:300px; width:100%;" alt="Producto de Ejemplo 29" class="img-fluid">
+                        <h3 style="text-align: center;">Cuello Sencillo</h3>
+                        <h5 class="precio-formatear" style="text-align: center;">3000</h5>
+                        <div class="row">
+                            <div class="col-md-6" style="text-align: center;">
+                                <a href="#" class="btn" style="background-color: rgb(102, 51, 51); color: rgb(255, 190, 4); font-weight: bold; width: 95%; padding:10px 8px;" data-toggle="modal" data-target="#propertyModal29">VER PRODUCTO</a>
+                            </div>  
+                            <div class="col-md-6" style="text-align: center;">
+                                <a href="https://wa.me/573207028443?text=Holaa,%20estoy%20interesado%20en%20el%20producto:%20Cuello%20Sencillo" class="btn" style="background-color: rgb(255, 190, 4); color: rgb(102, 51, 51); font-weight: bold; width: 95%; padding: 10px;">LO QUIERO!</a>
+                            </div>  
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ========================= 30 ========================= -->
+            <div class="col-lg-4 col-md-4 col-sm-6 col-12 property-item" data-price="6000" style="margin-top: 20px; margin-bottom: 20px;">
+                <div class="img-location-agency border-box">
+                    <div class="img-wrapper" style="background-image: url('images/perros/30.png'); background-size: cover; background-position: center;">
+                    </div>
+                    <div class="texto-locations">
+                        <img src="images/perros/30.png" style="border:2px solid #B4B4B4; text-align: center; height:300px; width:100%;" alt="Producto de Ejemplo 30" class="img-fluid">
+                        <h3 style="text-align: center;">Cuello Delgado Perro</h3>
+                        <h5 class="precio-formatear" style="text-align: center;">6000</h5>
+                        <div class="row">
+                            <div class="col-md-6" style="text-align: center;">
+                                <a href="#" class="btn" style="background-color: rgb(102, 51, 51); color: rgb(255, 190, 4); font-weight: bold; width: 95%; padding:10px 8px;" data-toggle="modal" data-target="#propertyModal30">VER PRODUCTO</a>
+                            </div>  
+                            <div class="col-md-6" style="text-align: center;">
+                                <a href="https://wa.me/573207028443?text=Holaa,%20estoy%20interesado%20en%20el%20producto:%20Cuello%20Delgado%20Perro" class="btn" style="background-color: rgb(255, 190, 4); color: rgb(102, 51, 51); font-weight: bold; width: 95%; padding: 10px;">LO QUIERO!</a>
+                            </div>  
+                        </div>
+                    </div>
+                </div>
+            </div>
+                        <!-- ========================= 31 ========================= -->
+            <div class="col-lg-4 col-md-4 col-sm-6 col-12 property-item" data-price="6000" style="margin-top: 20px; margin-bottom: 20px;">
+                <div class="img-location-agency border-box">
+                    <div class="img-wrapper" style="background-image: url('images/perros/31.png'); background-size: cover; background-position: center;">
+                    </div>
+                    <div class="texto-locations">
+                        <img src="images/perros/31.png" style="border:2px solid #B4B4B4; text-align: center; height:300px; width:100%;" alt="Producto de Ejemplo 31" class="img-fluid">
+                        <h3 style="text-align: center;">Cuello Delgado Moño</h3>
+                        <h5 class="precio-formatear" style="text-align: center;">6000</h5>
+                        <div class="row">
+                            <div class="col-md-6" style="text-align: center;">
+                                <a href="#" class="btn" style="background-color: rgb(102, 51, 51); color: rgb(255, 190, 4); font-weight: bold; width: 95%; padding:10px 8px;" data-toggle="modal" data-target="#propertyModal31">VER PRODUCTO</a>
+                            </div>  
+                            <div class="col-md-6" style="text-align: center;">
+                                <a href="https://wa.me/573207028443?text=Holaa,%20estoy%20interesado%20en%20el%20producto:%20Cuello%20Delgado%20Moño" class="btn" style="background-color: rgb(255, 190, 4); color: rgb(102, 51, 51); font-weight: bold; width: 95%; padding: 10px;">LO QUIERO!</a>
+                            </div>  
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ========================= 32 ========================= -->
+            <div class="col-lg-4 col-md-4 col-sm-6 col-12 property-item" data-price="6000" style="margin-top: 20px; margin-bottom: 20px;">
+                <div class="img-location-agency border-box">
+                    <div class="img-wrapper" style="background-image: url('images/perros/32.png'); background-size: cover; background-position: center;">
+                    </div>
+                    <div class="texto-locations">
+                        <img src="images/perros/32.png" style="border:2px solid #B4B4B4; text-align: center; height:300px; width:100%;" alt="Producto de Ejemplo 32" class="img-fluid">
+                        <h3 style="text-align: center;">Cuello Delgado Gato</h3>
+                        <h5 class="precio-formatear" style="text-align: center;">6000</h5>
+                        <div class="row">
+                            <div class="col-md-6" style="text-align: center;">
+                                <a href="#" class="btn" style="background-color: rgb(102, 51, 51); color: rgb(255, 190, 4); font-weight: bold; width: 95%; padding:10px 8px;" data-toggle="modal" data-target="#propertyModal32">VER PRODUCTO</a>
+                            </div>  
+                            <div class="col-md-6" style="text-align: center;">
+                                <a href="https://wa.me/573207028443?text=Holaa,%20estoy%20interesado%20en%20el%20producto:%20Cuello%20Delgado%20Gato" class="btn" style="background-color: rgb(255, 190, 4); color: rgb(102, 51, 51); font-weight: bold; width: 95%; padding: 10px;">LO QUIERO!</a>
+                            </div>  
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ========================= 33 ========================= -->
+            <div class="col-lg-4 col-md-4 col-sm-6 col-12 property-item" data-price="5000" style="margin-top: 20px; margin-bottom: 20px;">
+                <div class="img-location-agency border-box">
+                    <div class="img-wrapper" style="background-image: url('images/perros/33.png'); background-size: cover; background-position: center;">
+                    </div>
+                    <div class="texto-locations">
+                        <img src="images/perros/33.png" style="border:2px solid #B4B4B4; text-align: center; height:300px; width:100%;" alt="Producto de Ejemplo 33" class="img-fluid">
+                        <h3 style="text-align: center;">Cuello Huellas Placa/Moño 1"</h3>
+                        <p style="text-align: center;">3/4: $6.000<br>5/8: $5.000</p>
+                        <h5 class="precio-formatear" style="text-align: center;">7000</h5>
+                        <div class="row">
+                            <div class="col-md-6" style="text-align: center;">
+                                <a href="#" class="btn" style="background-color: rgb(102, 51, 51); color: rgb(255, 190, 4); font-weight: bold; width: 95%; padding:10px 8px;" data-toggle="modal" data-target="#propertyModal33">VER PRODUCTO</a>
+                            </div>  
+                            <div class="col-md-6" style="text-align: center;">
+                                <a href="https://wa.me/573207028443?text=Holaa,%20estoy%20interesado%20en%20el%20producto:%20Cuello%20Huellas%20Placa/Moño%201%22" class="btn" style="background-color: rgb(255, 190, 4); color: rgb(102, 51, 51); font-weight: bold; width: 95%; padding: 10px;">LO QUIERO!</a>
+                            </div>  
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ========================= 34 ========================= -->
+            <div class="col-lg-4 col-md-4 col-sm-6 col-12 property-item" data-price="11000" style="margin-top: 20px; margin-bottom: 20px;">
+                <div class="img-location-agency border-box">
+                    <div class="img-wrapper" style="background-image: url('images/perros/34.png'); background-size: cover; background-position: center;">
+                    </div>
+                    <div class="texto-locations">
+                        <img src="images/perros/34.png" style="border:2px solid #B4B4B4; text-align: center; height:300px; width:100%;" alt="Producto de Ejemplo 34" class="img-fluid">
+                        <h3 style="text-align: center;">Cuello Multicolor</h3>
+                        <h5 class="precio-formatear" style="text-align: center;">11000</h5>
+                        <div class="row">
+                            <div class="col-md-6" style="text-align: center;">
+                                <a href="#" class="btn" style="background-color: rgb(102, 51, 51); color: rgb(255, 190, 4); font-weight: bold; width: 95%; padding:10px 8px;" data-toggle="modal" data-target="#propertyModal34">VER PRODUCTO</a>
+                            </div>  
+                            <div class="col-md-6" style="text-align: center;">
+                                <a href="https://wa.me/573207028443?text=Holaa,%20estoy%20interesado%20en%20el%20producto:%20Cuello%20Multicolor" class="btn" style="background-color: rgb(255, 190, 4); color: rgb(102, 51, 51); font-weight: bold; width: 95%; padding: 10px;">LO QUIERO!</a>
+                            </div>  
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ========================= 35 ========================= -->
+            <div class="col-lg-4 col-md-4 col-sm-6 col-12 property-item" data-price="11000" style="margin-top: 20px; margin-bottom: 20px;">
+                <div class="img-location-agency border-box">
+                    <div class="img-wrapper" style="background-image: url('images/perros/35.png'); background-size: cover; background-position: center;">
+                    </div>
+                    <div class="texto-locations">
+                        <img src="images/perros/35.png" style="border:2px solid #B4B4B4; text-align: center; height:300px; width:100%;" alt="Producto de Ejemplo 35" class="img-fluid">
+                        <h3 style="text-align: center;">Cuello Militar 1"</h3>
+                        <p style="text-align: center;">1 1/2: $14.000<br>3/4: $9.000<br>5/8: $7.000</p>
+                        <h5 class="precio-formatear" style="text-align: center;">11000</h5>
+                        <div class="row">
+                            <div class="col-md-6" style="text-align: center;">
+                                <a href="#" class="btn" style="background-color: rgb(102, 51, 51); color: rgb(255, 190, 4); font-weight: bold; width: 95%; padding:10px 8px;" data-toggle="modal" data-target="#propertyModal35">VER PRODUCTO</a>
+                            </div>  
+                            <div class="col-md-6" style="text-align: center;">
+                                <a href="https://wa.me/573207028443?text=Holaa,%20estoy%20interesado%20en%20el%20producto:%20Cuello%20Militar%201%22" class="btn" style="background-color: rgb(255, 190, 4); color: rgb(102, 51, 51); font-weight: bold; width: 95%; padding: 10px;">LO QUIERO!</a>
+                            </div>  
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ========================= 36 ========================= -->
+            <div class="col-lg-4 col-md-4 col-sm-6 col-12 property-item" data-price="36000" style="margin-top: 20px; margin-bottom: 20px;">
+                <div class="img-location-agency border-box">
+                    <div class="img-wrapper" style="background-image: url('images/perros/36.png'); background-size: cover; background-position: center;">
+                    </div>
+                    <div class="texto-locations">
+                        <img src="images/perros/36.png" style="border:2px solid #B4B4B4; text-align: center; height:300px; width:100%;" alt="Producto de Ejemplo 36" class="img-fluid">
+                        <h3 style="text-align: center;">Cuello Cadena Grueso 70cm</h3>
+                        <p style="text-align: center;">40cm: $36.000</p>
+                        <h5 class="precio-formatear" style="text-align: center;">42000</h5>
+                        <div class="row">
+                            <div class="col-md-6" style="text-align: center;">
+                                <a href="#" class="btn" style="background-color: rgb(102, 51, 51); color: rgb(255, 190, 4); font-weight: bold; width: 95%; padding:10px 8px;" data-toggle="modal" data-target="#propertyModal36">VER PRODUCTO</a>
+                            </div>  
+                            <div class="col-md-6" style="text-align: center;">
+                                <a href="https://wa.me/573207028443?text=Holaa,%20estoy%20interesado%20en%20el%20producto:%20Cuello%20Cadena%20Grueso%2070cm" class="btn" style="background-color: rgb(255, 190, 4); color: rgb(102, 51, 51); font-weight: bold; width: 95%; padding: 10px;">LO QUIERO!</a>
+                            </div>  
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ========================= 37 ========================= -->
+            <div class="col-lg-4 col-md-4 col-sm-6 col-12 property-item" data-price="18000" style="margin-top: 20px; margin-bottom: 20px;">
+                <div class="img-location-agency border-box">
+                    <div class="img-wrapper" style="background-image: url('images/perros/37.png'); background-size: cover; background-position: center;">
+                    </div>
+                    <div class="texto-locations">
+                        <img src="images/perros/37.png" style="border:2px solid #B4B4B4; text-align: center; height:300px; width:100%;" alt="Producto de Ejemplo 37" class="img-fluid">
+                        <h3 style="text-align: center;">Cuello Cadena Delgado 60cm</h3>
+                        <p style="text-align: center;">30cm: $18.000</p>
+                        <h5 class="precio-formatear" style="text-align: center;">22000</h5>
+                        <div class="row">
+                            <div class="col-md-6" style="text-align: center;">
+                                <a href="#" class="btn" style="background-color: rgb(102, 51, 51); color: rgb(255, 190, 4); font-weight: bold; width: 95%; padding:10px 8px;" data-toggle="modal" data-target="#propertyModal37">VER PRODUCTO</a>
+                            </div>  
+                            <div class="col-md-6" style="text-align: center;">
+                                <a href="https://wa.me/573207028443?text=Holaa,%20estoy%20interesado%20en%20el%20producto:%20Cuello%20Cadena%20Delgado%2060cm" class="btn" style="background-color: rgb(255, 190, 4); color: rgb(102, 51, 51); font-weight: bold; width: 95%; padding: 10px;">LO QUIERO!</a>
+                            </div>  
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ========================= 38 ========================= -->
+            <div class="col-lg-4 col-md-4 col-sm-6 col-12 property-item" data-price="8000" style="margin-top: 20px; margin-bottom: 20px;">
+                <div class="img-location-agency border-box">
+                    <div class="img-wrapper" style="background-image: url('images/perros/38.png'); background-size: cover; background-position: center;">
+                    </div>
+                    <div class="texto-locations">
+                        <img src="images/perros/38.png" style="border:2px solid #B4B4B4; text-align: center; height:300px; width:100%;" alt="Producto de Ejemplo 38" class="img-fluid">
+                        <h3 style="text-align: center;">Cuello Pañoleta Grande</h3>
+                        <p style="text-align: center;">Pequeño: $8.000</p>
+                        <h5 class="precio-formatear" style="text-align: center;">10000</h5>
+                        <div class="row">
+                            <div class="col-md-6" style="text-align: center;">
+                                <a href="#" class="btn" style="background-color: rgb(102, 51, 51); color: rgb(255, 190, 4); font-weight: bold; width: 95%; padding:10px 8px;" data-toggle="modal" data-target="#propertyModal38">VER PRODUCTO</a>
+                            </div>  
+                            <div class="col-md-6" style="text-align: center;">
+                                <a href="https://wa.me/573207028443?text=Holaa,%20estoy%20interesado%20en%20el%20producto:%20Cuello%20Pañoleta%20Grande" class="btn" style="background-color: rgb(255, 190, 4); color: rgb(102, 51, 51); font-weight: bold; width: 95%; padding: 10px;">LO QUIERO!</a>
+                            </div>  
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ========================= 39 ========================= -->
+            <div class="col-lg-4 col-md-4 col-sm-6 col-12 property-item" data-price="6000" style="margin-top: 20px; margin-bottom: 20px;">
+                <div class="img-location-agency border-box">
+                    <div class="img-wrapper" style="background-image: url('images/perros/39.png'); background-size: cover; background-position: center;">
+                    </div>
+                    <div class="texto-locations">
+                        <img src="images/perros/39.png" style="border:2px solid #B4B4B4; text-align: center; height:300px; width:100%;" alt="Producto de Ejemplo 39" class="img-fluid">
+                        <h3 style="text-align: center;">Cuello Delgado Moño Verde</h3>
+                        <h5 class="precio-formatear" style="text-align: center;">6000</h5>
+                        <div class="row">
+                            <div class="col-md-6" style="text-align: center;">
+                                <a href="#" class="btn" style="background-color: rgb(102, 51, 51); color: rgb(255, 190, 4); font-weight: bold; width: 95%; padding:10px 8px;" data-toggle="modal" data-target="#propertyModal39">VER PRODUCTO</a>
+                            </div>  
+                            <div class="col-md-6" style="text-align: center;">
+                                <a href="https://wa.me/573207028443?text=Holaa,%20estoy%20interesado%20en%20el%20producto:%20Cuello%20Delgado%20Moño%20Verde" class="btn" style="background-color: rgb(255, 190, 4); color: rgb(102, 51, 51); font-weight: bold; width: 95%; padding: 10px;">LO QUIERO!</a>
+                            </div>  
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ========================= 40 ========================= -->
+            <div class="col-lg-4 col-md-4 col-sm-6 col-12 property-item" data-price="10000" style="margin-top: 20px; margin-bottom: 20px;">
+                <div class="img-location-agency border-box">
+                    <div class="img-wrapper" style="background-image: url('images/perros/40.png'); background-size: cover; background-position: center;">
+                    </div>
+                    <div class="texto-locations">
+                        <img src="images/perros/40.png" style="border:2px solid #B4B4B4; text-align: center; height:300px; width:100%;" alt="Producto de Ejemplo 40" class="img-fluid">
+                        <h3 style="text-align: center;">Cuello Grueso</h3>
+                        <h5 class="precio-formatear" style="text-align: center;">10000</h5>
+                        <div class="row">
+                            <div class="col-md-6" style="text-align: center;">
+                                <a href="#" class="btn" style="background-color: rgb(102, 51, 51); color: rgb(255, 190, 4); font-weight: bold; width: 95%; padding:10px 8px;" data-toggle="modal" data-target="#propertyModal40">VER PRODUCTO</a>
+                            </div>  
+                            <div class="col-md-6" style="text-align: center;">
+                                <a href="https://wa.me/573207028443?text=Holaa,%20estoy%20interesado%20en%20el%20producto:%20Cuello%20Grueso" class="btn" style="background-color: rgb(255, 190, 4); color: rgb(102, 51, 51); font-weight: bold; width: 95%; padding: 10px;">LO QUIERO!</a>
+                            </div>  
+                        </div>
+                    </div>
+                </div>
+            </div>
+                        <!-- ========================= 41 ========================= -->
+            <div class="col-lg-4 col-md-4 col-sm-6 col-12 property-item" data-price="14000" style="margin-top: 20px; margin-bottom: 20px;">
+                <div class="img-location-agency border-box">
+                    <div class="img-wrapper" style="background-image: url('images/perros/41.png'); background-size: cover; background-position: center;">
+                    </div>
+                    <div class="texto-locations">
+                        <img src="images/perros/41.png" style="border:2px solid #B4B4B4; text-align: center; height:300px; width:100%;" alt="Producto de Ejemplo 41" class="img-fluid">
+                        <h3 style="text-align: center;">Cuello Neon 1</h3>
+                        <p style="text-align: center;">3/4: $14.000</p>
+                        <h5 class="precio-formatear" style="text-align: center;">17000</h5>
+                        <div class="row">
+                            <div class="col-md-6" style="text-align: center;">
+                                <a href="#" class="btn" style="background-color: rgb(102, 51, 51); color: rgb(255, 190, 4); font-weight: bold; width: 95%; padding:10px 8px;" data-toggle="modal" data-target="#propertyModal41">VER PRODUCTO</a>
+                            </div>  
+                            <div class="col-md-6" style="text-align: center;">
+                                <a href="https://wa.me/573207028443?text=Holaa,%20estoy%20interesado%20en%20el%20producto:%20Cuello%20Neon%201" class="btn" style="background-color: rgb(255, 190, 4); color: rgb(102, 51, 51); font-weight: bold; width: 95%; padding: 10px;">LO QUIERO!</a>
+                            </div>  
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ========================= 42 ========================= -->
+            <div class="col-lg-4 col-md-4 col-sm-6 col-12 property-item" data-price="17000" style="margin-top: 20px; margin-bottom: 20px;">
+                <div class="img-location-agency border-box">
+                    <div class="img-wrapper" style="background-image: url('images/perros/42.png'); background-size: cover; background-position: center;">
+                    </div>
+                    <div class="texto-locations">
+                        <img src="images/perros/42.png" style="border:2px solid #B4B4B4; text-align: center; height:300px; width:100%;" alt="Producto de Ejemplo 42" class="img-fluid">
+                        <h3 style="text-align: center;">Cuello Neon Perro</h3>
+                        <h5 class="precio-formatear" style="text-align: center;">17000</h5>
+                        <div class="row">
+                            <div class="col-md-6" style="text-align: center;">
+                                <a href="#" class="btn" style="background-color: rgb(102, 51, 51); color: rgb(255, 190, 4); font-weight: bold; width: 95%; padding:10px 8px;" data-toggle="modal" data-target="#propertyModal42">VER PRODUCTO</a>
+                            </div>  
+                            <div class="col-md-6" style="text-align: center;">
+                                <a href="https://wa.me/573207028443?text=Holaa,%20estoy%20interesado%20en%20el%20producto:%20Cuello%20Neon%20Perro" class="btn" style="background-color: rgb(255, 190, 4); color: rgb(102, 51, 51); font-weight: bold; width: 95%; padding: 10px;">LO QUIERO!</a>
+                            </div>  
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ========================= 43 ========================= -->
+            <div class="col-lg-4 col-md-4 col-sm-6 col-12 property-item" data-price="14000" style="margin-top: 20px; margin-bottom: 20px;">
+                <div class="img-location-agency border-box">
+                    <div class="img-wrapper" style="background-image: url('images/perros/43.png'); background-size: cover; background-position: center;">
+                    </div>
+                    <div class="texto-locations">
+                        <img src="images/perros/43.png" style="border:2px solid #B4B4B4; text-align: center; height:300px; width:100%;" alt="Producto de Ejemplo 43" class="img-fluid">
+                        <h3 style="text-align: center;">Cuello Estampado 1"</h3>
+                        <p style="text-align: center;">3/4: $14.000</p>
+                        <h5 class="precio-formatear" style="text-align: center;">17000</h5>
+                        <div class="row">
+                            <div class="col-md-6" style="text-align: center;">
+                                <a href="#" class="btn" style="background-color: rgb(102, 51, 51); color: rgb(255, 190, 4); font-weight: bold; width: 95%; padding:10px 8px;" data-toggle="modal" data-target="#propertyModal43">VER PRODUCTO</a>
+                            </div>  
+                            <div class="col-md-6" style="text-align: center;">
+                                <a href="https://wa.me/573207028443?text=Holaa,%20estoy%20interesado%20en%20el%20producto:%20Cuello%20Estampado%201%22" class="btn" style="background-color: rgb(255, 190, 4); color: rgb(102, 51, 51); font-weight: bold; width: 95%; padding: 10px;">LO QUIERO!</a>
+                            </div>  
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ========================= 44 ========================= -->
+            <div class="col-lg-4 col-md-4 col-sm-6 col-12 property-item" data-price="44000" style="margin-top: 20px; margin-bottom: 20px;">
+                <div class="img-location-agency border-box">
+                    <div class="img-wrapper" style="background-image: url('images/perros/44.png'); background-size: cover; background-position: center;">
+                    </div>
+                    <div class="texto-locations">
+                        <img src="images/perros/44.png" style="border:2px solid #B4B4B4; text-align: center; height:300px; width:100%;" alt="Producto de Ejemplo 44" class="img-fluid">
+                        <h3 style="text-align: center;">Cuello Estampado 1"</h3>
+                        <p style="text-align: center;">3/4: $14.000</p>
+                        <h5 class="precio-formatear" style="text-align: center;">17000</h5>
+                        <div class="row">
+                            <div class="col-md-6" style="text-align: center;">
+                                <a href="#" class="btn" style="background-color: rgb(102, 51, 51); color: rgb(255, 190, 4); font-weight: bold; width: 95%; padding:10px 8px;" data-toggle="modal" data-target="#propertyModal44">VER PRODUCTO</a>
+                            </div>  
+                            <div class="col-md-6" style="text-align: center;">
+                                <a href="https://wa.me/573207028443?text=Holaa,%20estoy%20interesado%20en%20el%20producto:%20Cuello%20Estampado%201%22" class="btn" style="background-color: rgb(255, 190, 4); color: rgb(102, 51, 51); font-weight: bold; width: 95%; padding: 10px;">LO QUIERO!</a>
+                            </div>  
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ========================= 45 ========================= -->
+            <div class="col-lg-4 col-md-4 col-sm-6 col-12 property-item" data-price="16000" style="margin-top: 20px; margin-bottom: 20px;">
+                <div class="img-location-agency border-box">
+                    <div class="img-wrapper" style="background-image: url('images/perros/45.png'); background-size: cover; background-position: center;">
+                    </div>
+                    <div class="texto-locations">
+                        <img src="images/perros/45.png" style="border:2px solid #B4B4B4; text-align: center; height:300px; width:100%;" alt="Producto de Ejemplo 45" class="img-fluid">
+                        <h3 style="text-align: center;">Cuello Extra Moño/Placa</h3>
+                        <h5 class="precio-formatear" style="text-align: center;">16000</h5>
+                        <div class="row">
+                            <div class="col-md-6" style="text-align: center;">
+                                <a href="#" class="btn" style="background-color: rgb(102, 51, 51); color: rgb(255, 190, 4); font-weight: bold; width: 95%; padding:10px 8px;" data-toggle="modal" data-target="#propertyModal45">VER PRODUCTO</a>
+                            </div>  
+                            <div class="col-md-6" style="text-align: center;">
+                                <a href="https://wa.me/573207028443?text=Holaa,%20estoy%20interesado%20en%20el%20producto:%20Cuello%20Extra%20Moño/Placa" class="btn" style="background-color: rgb(255, 190, 4); color: rgb(102, 51, 51); font-weight: bold; width: 95%; padding: 10px;">LO QUIERO!</a>
+                            </div>  
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ========================= 46 ========================= -->
+            <div class="col-lg-4 col-md-4 col-sm-6 col-12 property-item" data-price="20000" style="margin-top: 20px; margin-bottom: 20px;">
+                <div class="img-location-agency border-box">
+                    <div class="img-wrapper" style="background-image: url('images/perros/46.png'); background-size: cover; background-position: center;">
+                    </div>
+                    <div class="texto-locations">
+                        <img src="images/perros/46.png" style="border:2px solid #B4B4B4; text-align: center; height:300px; width:100%;" alt="Producto de Ejemplo 46" class="img-fluid">
+                        <h3 style="text-align: center;">Cuello Pitbull</h3>
+                        <h5 class="precio-formatear" style="text-align: center;">20000</h5>
+                        <div class="row">
+                            <div class="col-md-6" style="text-align: center;">
+                                <a href="#" class="btn" style="background-color: rgb(102, 51, 51); color: rgb(255, 190, 4); font-weight: bold; width: 95%; padding:10px 8px;" data-toggle="modal" data-target="#propertyModal46">VER PRODUCTO</a>
+                            </div>  
+                            <div class="col-md-6" style="text-align: center;">
+                                <a href="https://wa.me/573207028443?text=Holaa,%20estoy%20interesado%20en%20el%20producto:%20Cuello%20Pitbull" class="btn" style="background-color: rgb(255, 190, 4); color: rgb(102, 51, 51); font-weight: bold; width: 95%; padding: 10px;">LO QUIERO!</a>
+                            </div>  
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ========================= 47 ========================= -->
+            <div class="col-lg-4 col-md-4 col-sm-6 col-12 property-item" data-price="20000" style="margin-top: 20px; margin-bottom: 20px;">
+                <div class="img-location-agency border-box">
+                    <div class="img-wrapper" style="background-image: url('images/perros/47.png'); background-size: cover; background-position: center;">
+                    </div>
+                    <div class="texto-locations">
+                        <img src="images/perros/47.png" style="border:2px solid #B4B4B4; text-align: center; height:300px; width:100%;" alt="Producto de Ejemplo 47" class="img-fluid">
+                        <h3 style="text-align: center;">Cuello Pitbull</h3>
+                        <h5 class="precio-formatear" style="text-align: center;">20000</h5>
+                        <div class="row">
+                            <div class="col-md-6" style="text-align: center;">
+                                <a href="#" class="btn" style="background-color: rgb(102, 51, 51); color: rgb(255, 190, 4); font-weight: bold; width: 95%; padding:10px 8px;" data-toggle="modal" data-target="#propertyModal47">VER PRODUCTO</a>
+                            </div>  
+                            <div class="col-md-6" style="text-align: center;">
+                                <a href="https://wa.me/573207028443?text=Holaa,%20estoy%20interesado%20en%20el%20producto:%20Cuello%20Pitbull" class="btn" style="background-color: rgb(255, 190, 4); color: rgb(102, 51, 51); font-weight: bold; width: 95%; padding: 10px;">LO QUIERO!</a>
+                            </div>  
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ========================= 48 ========================= -->
+            <div class="col-lg-4 col-md-4 col-sm-6 col-12 property-item" data-price="13000" style="margin-top: 20px; margin-bottom: 20px;">
+                <div class="img-location-agency border-box">
+                    <div class="img-wrapper" style="background-image: url('images/perros/48.png'); background-size: cover; background-position: center;">
+                    </div>
+                    <div class="texto-locations">
+                        <img src="images/perros/48.png" style="border:2px solid #B4B4B4; text-align: center; height:300px; width:100%;" alt="Producto de Ejemplo 48" class="img-fluid">
+                        <h3 style="text-align: center;">Cuello Pitbull Sencillo</h3>
+                        <h5 class="precio-formatear" style="text-align: center;">13000</h5>
+                        <div class="row">
+                            <div class="col-md-6" style="text-align: center;">
+                                <a href="#" class="btn" style="background-color: rgb(102, 51, 51); color: rgb(255, 190, 4); font-weight: bold; width: 95%; padding:10px 8px;" data-toggle="modal" data-target="#propertyModal48">VER PRODUCTO</a>
+                            </div>  
+                            <div class="col-md-6" style="text-align: center;">
+                                <a href="https://wa.me/573207028443?text=Holaa,%20estoy%20interesado%20en%20el%20producto:%20Cuello%20Pitbull%20Sencillo" class="btn" style="background-color: rgb(255, 190, 4); color: rgb(102, 51, 51); font-weight: bold; width: 95%; padding: 10px;">LO QUIERO!</a>
+                            </div>  
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ========================= 49 ========================= -->
+            <div class="col-lg-4 col-md-4 col-sm-6 col-12 property-item" data-price="3000" style="margin-top: 20px; margin-bottom: 20px;">
+                <div class="img-location-agency border-box">
+                    <div class="img-wrapper" style="background-image: url('images/perros/49.png'); background-size: cover; background-position: center;">
+                    </div>
+                    <div class="texto-locations">
+                        <img src="images/perros/49.png" style="border:2px solid #B4B4B4; text-align: center; height:300px; width:100%;" alt="Producto de Ejemplo 49" class="img-fluid">
+                        <h3 style="text-align: center;">Pañoleta Sencilla Grande</h3>
+                        <p style="text-align: center;">Extra: $8.000<br>Mediano: 4.000<br>Pequeño: $3.000</p>
+                        <h5 class="precio-formatear" style="text-align: center;">5000</h5>
+                        <div class="row">
+                            <div class="col-md-6" style="text-align: center;">
+                                <a href="#" class="btn" style="background-color: rgb(102, 51, 51); color: rgb(255, 190, 4); font-weight: bold; width: 95%; padding:10px 8px;" data-toggle="modal" data-target="#propertyModal49">VER PRODUCTO</a>
+                            </div>  
+                            <div class="col-md-6" style="text-align: center;">
+                                <a href="https://wa.me/573207028443?text=Holaa,%20estoy%20interesado%20en%20el%20producto:%20Pañoleta%20Sencilla%20Grande" class="btn" style="background-color: rgb(255, 190, 4); color: rgb(102, 51, 51); font-weight: bold; width: 95%; padding: 10px;">LO QUIERO!</a>
+                            </div>  
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ========================= 50 ========================= -->
+            <div class="col-lg-4 col-md-4 col-sm-6 col-12 property-item" data-price="70000" style="margin-top: 20px; margin-bottom: 20px;">
+                <div class="img-location-agency border-box">
+                    <div class="img-wrapper" style="background-image: url('images/perros/50.png'); background-size: cover; background-position: center;">
+                    </div>
+                    <div class="texto-locations">
+                        <img src="images/perros/50.png" style="border:2px solid #B4B4B4; text-align: center; height:300px; width:100%;" alt="Producto de Ejemplo 50" class="img-fluid">
+                        <h3 style="text-align: center;">Pañoleta Decorada Grande</h3>
+                        <p style="text-align: center;">Mediano: $8.000<br>Pequeño: $7.000<br>5/8: $7.000</p>
+                        <h5 class="precio-formatear" style="text-align: center;">50000</h5>
+                        <div class="row">
+                            <div class="col-md-6" style="text-align: center;">
+                                <a href="#" class="btn" style="background-color: rgb(102, 51, 51); color: rgb(255, 190, 4); font-weight: bold; width: 95%; padding:10px 8px;" data-toggle="modal" data-target="#propertyModal50">VER PRODUCTO</a>
+                            </div>  
+                            <div class="col-md-6" style="text-align: center;">
+                                <a href="https://wa.me/573207028443?text=Holaa,%20estoy%20interesado%20en%20el%20producto:%20Pañoleta%20Decorada%20Grande" class="btn" style="background-color: rgb(255, 190, 4); color: rgb(102, 51, 51); font-weight: bold; width: 95%; padding: 10px;">LO QUIERO!</a>
+                            </div>  
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ========================= 51 ========================= --> 
+            <div class="col-lg-4 col-md-4 col-sm-6 col-12 property-item" data-price="19000" style="margin-top: 20px; margin-bottom: 20px;">
+                <div class="img-location-agency border-box">
+                    <div class="img-wrapper" style="background-image: url('images/perros/1.1.jpg'); background-size: cover; background-position: center;"></div>
+                    <div class="texto-locations">
+                        <img src="images/perros/1.1.jpg" style="border:2px solid #B4B4B4; text-align: center; height:300px; width:100%;" alt="Producto de Ejemplo 51" class="img-fluid">
+                        <h3 style="text-align: center;">Palito Cordero *70gr XS</h3>
+                        <h5 class="precio-formatear" style="text-align: center;">19000</h5>
+                        <div class="row">
+                            <div class="col-md-6" style="text-align: center;">
+                                <a href="#" class="btn" style="background-color: rgb(102, 51, 51); color: rgb(255, 190, 4); font-weight: bold; width: 95%; padding:10px 8px;" data-toggle="modal" data-target="#propertyModal51">VER PRODUCTO</a>
+                            </div>  
+                            <div class="col-md-6" style="text-align: center;">
+                                <a href="https://wa.me/573207028443?text=Holaa,%20estoy%20interesado%20en%20el%20producto:%20Palito%20Cordero%20*70gr%20XS" class="btn" style="background-color: rgb(255, 190, 4); color: rgb(102, 51, 51); font-weight: bold; width: 95%; padding: 10px;">LO QUIERO!</a>
+                            </div>  
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ========================= 52 ========================= --> 
+            <div class="col-lg-4 col-md-4 col-sm-6 col-12 property-item" data-price="5000" style="margin-top: 20px; margin-bottom: 20px;">
+                <div class="img-location-agency border-box">
+                    <div class="img-wrapper" style="background-image: url('images/perros/1.2.jpg'); background-size: cover; background-position: center;"></div>
+                    <div class="texto-locations">
+                        <img src="images/perros/1.2.jpg" style="border:2px solid #B4B4B4; text-align: center; height:300px; width:100%;" alt="Producto de Ejemplo 52" class="img-fluid">
+                        <h3 style="text-align: center;">Hueso de Cerdo</h3>
+                        <h5 class="precio-formatear" style="text-align: center;">5000</h5>
+                        <div class="row">
+                            <div class="col-md-6" style="text-align: center;">
+                                <a href="#" class="btn" style="background-color: rgb(102, 51, 51); color: rgb(255, 190, 4); font-weight: bold; width: 95%; padding:10px 8px;" data-toggle="modal" data-target="#propertyModal52">VER PRODUCTO</a>
+                            </div>  
+                            <div class="col-md-6" style="text-align: center;">
+                                <a href="https://wa.me/573207028443?text=Holaa,%20estoy%20interesado%20en%20el%20producto:%20Hueso%20de%20Cerdo" class="btn" style="background-color: rgb(255, 190, 4); color: rgb(102, 51, 51); font-weight: bold; width: 95%; padding: 10px;">LO QUIERO!</a>
+                            </div>  
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ========================= 53 ========================= --> 
+            <div class="col-lg-4 col-md-4 col-sm-6 col-12 property-item" data-price="9000" style="margin-top: 20px; margin-bottom: 20px;">
+                <div class="img-location-agency border-box">
+                    <div class="img-wrapper" style="background-image: url('images/perros/1.3.jpg'); background-size: cover; background-position: center;"></div>
+                    <div class="texto-locations">
+                        <img src="images/perros/1.3.jpg" style="border:2px solid #B4B4B4; text-align: center; height:300px; width:100%;" alt="Producto de Ejemplo 53" class="img-fluid">
+                        <h3 style="text-align: center;">Palito de Café Xs</h3>
+                        <p style="text-align: center;">S: $11.000<br>M: $13.000<br>L: $15.000<br>XL: $17.000</p>
+                        <h5 class="precio-formatear" style="text-align: center;">9000</h5>
+                        <div class="row">
+                            <div class="col-md-6" style="text-align: center;">
+                                <a href="#" class="btn" style="background-color: rgb(102, 51, 51); color: rgb(255, 190, 4); font-weight: bold; width: 95%; padding:10px 8px;" data-toggle="modal" data-target="#propertyModal53">VER PRODUCTO</a>
+                            </div>  
+                            <div class="col-md-6" style="text-align: center;">
+                                <a href="https://wa.me/573207028443?text=Holaa,%20estoy%20interesado%20en%20el%20producto:%20Palito%20de%20Café%20XS" class="btn" style="background-color: rgb(255, 190, 4); color: rgb(102, 51, 51); font-weight: bold; width: 95%; padding: 10px;">LO QUIERO!</a>
+                            </div>  
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ========================= 54 ========================= --> 
+            <div class="col-lg-4 col-md-4 col-sm-6 col-12 property-item" data-price="11000" style="margin-top: 20px; margin-bottom: 20px;">
+                <div class="img-location-agency border-box">
+                    <div class="img-wrapper" style="background-image: url('images/perros/1.4.jpg'); background-size: cover; background-position: center;"></div>
+                    <div class="texto-locations">
+                        <img src="images/perros/1.4.jpg" style="border:2px solid #B4B4B4; text-align: center; height:300px; width:100%;" alt="Producto de Ejemplo 54" class="img-fluid">
+                        <h3 style="text-align: center;">Bolsa Basura para Mascotas *12</h3>
+                        <h5 class="precio-formatear" style="text-align: center;">11000</h5>
+                        <div class="row">
+                            <div class="col-md-6" style="text-align: center;">
+                                <a href="#" class="btn" style="background-color: rgb(102, 51, 51); color: rgb(255, 190, 4); font-weight: bold; width: 95%; padding:10px 8px;" data-toggle="modal" data-target="#propertyModal54">VER PRODUCTO</a>
+                            </div>  
+                            <div class="col-md-6" style="text-align: center;">
+                                <a href="https://wa.me/573207028443?text=Holaa,%20estoy%20interesado%20en%20el%20producto:%20Bolsa%20Basura%20para%20Mascotas%20*12" class="btn" style="background-color: rgb(255, 190, 4); color: rgb(102, 51, 51); font-weight: bold; width: 95%; padding: 10px;">LO QUIERO!</a>
+                            </div>  
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ========================= 55 ========================= --> 
+            <div class="col-lg-4 col-md-4 col-sm-6 col-12 property-item" data-price="6000" style="margin-top: 20px; margin-bottom: 20px;">
+                <div class="img-location-agency border-box">
+                    <div class="img-wrapper" style="background-image: url('images/perros/1.5.jpg'); background-size: cover; background-position: center;"></div>
+                    <div class="texto-locations">
+                        <img src="images/perros/1.5.jpg" style="border:2px solid #B4B4B4; text-align: center; height:300px; width:100%;" alt="Producto de Ejemplo 55" class="img-fluid">
+                        <h3 style="text-align: center;">Pulmon Cerdo *50gr</h3>
+                        <h5 class="precio-formatear" style="text-align: center;">6000</h5>
+                        <div class="row">
+                            <div class="col-md-6" style="text-align: center;">
+                                <a href="#" class="btn" style="background-color: rgb(102, 51, 51); color: rgb(255, 190, 4); font-weight: bold; width: 95%; padding:10px 8px;" data-toggle="modal" data-target="#propertyModal55">VER PRODUCTO</a>
+                            </div>  
+                            <div class="col-md-6" style="text-align: center;">
+                                <a href="https://wa.me/573207028443?text=Holaa,%20estoy%20interesado%20en%20el%20producto:%20Pulmón%20Cerdo%20*50gr" class="btn" style="background-color: rgb(255, 190, 4); color: rgb(102, 51, 51); font-weight: bold; width: 95%; padding: 10px;">LO QUIERO!</a>
+                            </div>  
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ========================= 56 ========================= --> 
+            <div class="col-lg-4 col-md-4 col-sm-6 col-12 property-item" data-price="10000" style="margin-top: 20px; margin-bottom: 20px;">
+                <div class="img-location-agency border-box">
+                    <div class="img-wrapper" style="background-image: url('images/perros/1.6.jpg'); background-size: cover; background-position: center;"></div>
+                    <div class="texto-locations">
+                        <img src="images/perros/1.6.jpg" style="border:2px solid #B4B4B4; text-align: center; height:300px; width:100%;" alt="Producto de Ejemplo 56" class="img-fluid">
+                        <h3 style="text-align: center;">Rodillo Quitamota</h3>
+                        <h5 class="precio-formatear" style="text-align: center;">10000</h5>
+                        <div class="row">
+                            <div class="col-md-6" style="text-align: center;">
+                                <a href="#" class="btn" style="background-color: rgb(102, 51, 51); color: rgb(255, 190, 4); font-weight: bold; width: 95%; padding:10px 8px;" data-toggle="modal" data-target="#propertyModal56">VER PRODUCTO</a>
+                            </div>  
+                            <div class="col-md-6" style="text-align: center;">
+                                <a href="https://wa.me/573207028443?text=Holaa,%20estoy%20interesado%20en%20el%20producto:%20Rodillo%20Quitamota" class="btn" style="background-color: rgb(255, 190, 4); color: rgb(102, 51, 51); font-weight: bold; width: 95%; padding: 10px;">LO QUIERO!</a>
+                            </div>  
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ========================= 57 ========================= --> 
+            <div class="col-lg-4 col-md-4 col-sm-6 col-12 property-item" data-price="6000" style="margin-top: 20px; margin-bottom: 20px;">
+                <div class="img-location-agency border-box">
+                    <div class="img-wrapper" style="background-image: url('images/perros/1.7.jpg'); background-size: cover; background-position: center;"></div>
+                    <div class="texto-locations">
+                        <img src="images/perros/1.7.jpg" style="border:2px solid #B4B4B4; text-align: center; height:300px; width:100%;" alt="Producto de Ejemplo 57" class="img-fluid">
+                        <h3 style="text-align: center;">Repuesto Quitamota Lavable</h3>
+                        <h5 class="precio-formatear" style="text-align: center;">6000</h5>
+                        <div class="row">
+                            <div class="col-md-6" style="text-align: center;">
+                                <a href="#" class="btn" style="background-color: rgb(102, 51, 51); color: rgb(255, 190, 4); font-weight: bold; width: 95%; padding:10px 8px;" data-toggle="modal" data-target="#propertyModal57">VER PRODUCTO</a>
+                            </div>  
+                            <div class="col-md-6" style="text-align: center;">
+                                <a href="https://wa.me/573207028443?text=Holaa,%20estoy%20interesado%20en%20el%20producto:%20Repuesto%20Quitamota%20Lavable" class="btn" style="background-color: rgb(255, 190, 4); color: rgb(102, 51, 51); font-weight: bold; width: 95%; padding: 10px;">LO QUIERO!</a>
+                            </div>  
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ========================= 58 ========================= --> 
+            <div class="col-lg-4 col-md-4 col-sm-6 col-12 property-item" data-price="9000" style="margin-top: 20px; margin-bottom: 20px;">
+                <div class="img-location-agency border-box">
+                    <div class="img-wrapper" style="background-image: url('images/perros/1.8.jpg'); background-size: cover; background-position: center;"></div>
+                    <div class="texto-locations">
+                        <img src="images/perros/1.8.jpg" style="border:2px solid #B4B4B4; text-align: center; height:300px; width:100%;" alt="Producto de Ejemplo 58" class="img-fluid">
+                        <h3 style="text-align: center;">Comedero Pequeño</h3>
+                        <h5 class="precio-formatear" style="text-align: center;">9000</h5>
+                        <div class="row">
+                            <div class="col-md-6" style="text-align: center;">
+                                <a href="#" class="btn" style="background-color: rgb(102, 51, 51); color: rgb(255, 190, 4); font-weight: bold; width: 95%; padding:10px 8px;" data-toggle="modal" data-target="#propertyModal58">VER PRODUCTO</a>
+                            </div>  
+                            <div class="col-md-6" style="text-align: center;">
+                                <a href="https://wa.me/573207028443?text=Holaa,%20estoy%20interesado%20en%20el%20producto:%20Comedero%20Pequeño" class="btn" style="background-color: rgb(255, 190, 4); color: rgb(102, 51, 51); font-weight: bold; width: 95%; padding: 10px;">LO QUIERO!</a>
+                            </div>  
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ========================= 59 ========================= --> 
+            <div class="col-lg-4 col-md-4 col-sm-6 col-12 property-item" data-price="8000" style="margin-top: 20px; margin-bottom: 20px;">
+                <div class="img-location-agency border-box">
+                    <div class="img-wrapper" style="background-image: url('images/perros/1.9.jpg'); background-size: cover; background-position: center;"></div>
+                    <div class="texto-locations">
+                        <img src="images/perros/1.9.jpg" style="border:2px solid #B4B4B4; text-align: center; height:300px; width:100%;" alt="Producto de Ejemplo 59" class="img-fluid">
+                        <h3 style="text-align: center;">Cortauñas Pequeñas</h3>
+                        <h5 class="precio-formatear" style="text-align: center;">8000</h5>
+                        <div class="row">
+                            <div class="col-md-6" style="text-align: center;">
+                                <a href="#" class="btn" style="background-color: rgb(102, 51, 51); color: rgb(255, 190, 4); font-weight: bold; width: 95%; padding:10px 8px;" data-toggle="modal" data-target="#propertyModal59">VER PRODUCTO</a>
+                            </div>  
+                            <div class="col-md-6" style="text-align: center;">
+                                <a href="https://wa.me/573207028443?text=Holaa,%20estoy%20interesado%20en%20el%20producto:%20Cortauñas%20Pequeñas" class="btn" style="background-color: rgb(255, 190, 4); color: rgb(102, 51, 51); font-weight: bold; width: 95%; padding: 10px;">LO QUIERO!</a>
+                            </div>  
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ========================= 60 ========================= --> 
+            <div class="col-lg-4 col-md-4 col-sm-6 col-12 property-item" data-price="15000" style="margin-top: 20px; margin-bottom: 20px;">
+                <div class="img-location-agency border-box">
+                    <div class="img-wrapper" style="background-image: url('images/perros/1.10.jpg'); background-size: cover; background-position: center;"></div>
+                    <div class="texto-locations">
+                        <img src="images/perros/1.10.jpg" style="border:2px solid #B4B4B4; text-align: center; height:300px; width:100%;" alt="Producto de Ejemplo 60" class="img-fluid">
+                        <h3 style="text-align: center;">Chaleco con Lazo</h3>
+                        <p style="text-align: center;">S,M,L</p>
+                        <h5 class="precio-formatear" style="text-align: center;">15000</h5>
+                        <div class="row">
+                            <div class="col-md-6" style="text-align: center;">
+                                <a href="#" class="btn" style="background-color: rgb(102, 51, 51); color: rgb(255, 190, 4); font-weight: bold; width: 95%; padding:10px 8px;" data-toggle="modal" data-target="#propertyModal60">VER PRODUCTO</a>
+                            </div>  
+                            <div class="col-md-6" style="text-align: center;">
+                                <a href="https://wa.me/573207028443?text=Holaa,%20estoy%20interesado%20en%20el%20producto:%20Chaleco%20con%20Lazo" class="btn" style="background-color: rgb(255, 190, 4); color: rgb(102, 51, 51); font-weight: bold; width: 95%; padding: 10px;">LO QUIERO!</a>
+                            </div>  
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+    <!-- Modal Ver PRODUCTO 1-->
+    <div class="modal fade" id="propertyModal1" tabindex="-1" aria-labelledby="propertyModalLabel1" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="propertyModalLabel1">Fotos del PRODUCTO</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body text-center">
+                    <img src="images/perros/1.png" style="border-radius:15px; border:2px solid #B4B4B4; height:auto; width:100%;" alt="PRODUCTO de Ejemplo 51" class="img-fluid">
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal Ver PRODUCTO 2-->
+    <div class="modal fade" id="propertyModal2" tabindex="-1" aria-labelledby="propertyModalLabel2" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="propertyModalLabel2">Fotos del PRODUCTO</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body text-center">
+                    <img src="images/perros/2.png" style="border-radius:15px; border:2px solid #B4B4B4; height:auto; width:100%;" alt="PRODUCTO de Ejemplo 52" class="img-fluid">
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal Ver PRODUCTO 3-->
+    <div class="modal fade" id="propertyModal3" tabindex="-1" aria-labelledby="propertyModalLabel3" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="propertyModalLabel3">Fotos del PRODUCTO</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body text-center">
+                    <img src="images/perros/3.png" style="border-radius:15px; border:2px solid #B4B4B4; height:auto; width:100%;" alt="PRODUCTO de Ejemplo 53" class="img-fluid">
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal Ver PRODUCTO 4-->
+    <div class="modal fade" id="propertyModal4" tabindex="-1" aria-labelledby="propertyModalLabel4" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="propertyModalLabel4">Fotos del PRODUCTO</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body text-center">
+                    <img src="images/perros/4.png" style="border-radius:15px; border:2px solid #B4B4B4; height:auto; width:100%;" alt="PRODUCTO de Ejemplo 54" class="img-fluid">
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal Ver PRODUCTO 5-->
+    <div class="modal fade" id="propertyModal5" tabindex="-1" aria-labelledby="propertyModalLabel5" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="propertyModalLabel5">Fotos del PRODUCTO</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body text-center">
+                    <img src="images/perros/5.png" style="border-radius:15px; border:2px solid #B4B4B4; height:auto; width:100%;" alt="PRODUCTO de Ejemplo 55" class="img-fluid">
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal Ver PRODUCTO 6-->
+    <div class="modal fade" id="propertyModal6" tabindex="-1" aria-labelledby="propertyModalLabel6" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="propertyModalLabel6">Fotos del PRODUCTO</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body text-center">
+                    <img src="images/perros/6.png" style="border-radius:15px; border:2px solid #B4B4B4; height:auto; width:100%;" alt="PRODUCTO de Ejemplo 56" class="img-fluid">
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal Ver PRODUCTO 7-->
+    <div class="modal fade" id="propertyModal7" tabindex="-1" aria-labelledby="propertyModalLabel7" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="propertyModalLabel1">Fotos del PRODUCTO</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body text-center">
+                    <img src="images/perros/7.png" style="border-radius:15px; border:2px solid #B4B4B4; height:auto; width:100%;" alt="PRODUCTO de Ejemplo 57" class="img-fluid">
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal Ver PRODUCTO 8-->
+    <div class="modal fade" id="propertyModal8" tabindex="-1" aria-labelledby="propertyModalLabel8" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="propertyModalLabel8">Fotos del PRODUCTO</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body text-center">
+                    <img src="images/perros/8.png" style="border-radius:15px; border:2px solid #B4B4B4; height:auto; width:100%;" alt="PRODUCTO de Ejemplo 58" class="img-fluid">
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal Ver PRODUCTO 9-->
+<div class="modal fade" id="propertyModal9" tabindex="-1" aria-labelledby="propertyModalLabel9" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="propertyModalLabel9">Fotos del PRODUCTO</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body text-center">
+                <img src="images/perros/9.png" style="border-radius:15px; border:2px solid #B4B4B4; height:auto; width:100%;" alt="PRODUCTO de Ejemplo 9" class="img-fluid">
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Modal Ver PRODUCTO 10-->
+<div class="modal fade" id="propertyModal10" tabindex="-1" aria-labelledby="propertyModalLabel10" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="propertyModalLabel10">Fotos del PRODUCTO</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body text-center">
+                <img src="images/perros/10.png" style="border-radius:15px; border:2px solid #B4B4B4; height:auto; width:100%;" alt="PRODUCTO de Ejemplo 10" class="img-fluid">
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Modal Ver PRODUCTO 11-->
+<div class="modal fade" id="propertyModal11" tabindex="-1" aria-labelledby="propertyModalLabel11" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="propertyModalLabel11">Fotos del PRODUCTO</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body text-center">
+                <img src="images/perros/11.png" style="border-radius:15px; border:2px solid #B4B4B4; height:auto; width:100%;" alt="PRODUCTO de Ejemplo 11" class="img-fluid">
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Modal Ver PRODUCTO 12-->
+<div class="modal fade" id="propertyModal12" tabindex="-1" aria-labelledby="propertyModalLabel12" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="propertyModalLabel12">Fotos del PRODUCTO</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body text-center">
+                <img src="images/perros/12.png" style="border-radius:15px; border:2px solid #B4B4B4; height:auto; width:100%;" alt="PRODUCTO de Ejemplo 12" class="img-fluid">
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Modal Ver PRODUCTO 13-->
+<div class="modal fade" id="propertyModal13" tabindex="-1" aria-labelledby="propertyModalLabel13" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="propertyModalLabel13">Fotos del PRODUCTO</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body text-center">
+                <img src="images/perros/13.png" style="border-radius:15px; border:2px solid #B4B4B4; height:auto; width:100%;" alt="PRODUCTO de Ejemplo 13" class="img-fluid">
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Modal Ver PRODUCTO 14-->
+<div class="modal fade" id="propertyModal14" tabindex="-1" aria-labelledby="propertyModalLabel14" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="propertyModalLabel14">Fotos del PRODUCTO</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body text-center">
+                <img src="images/perros/14.png" style="border-radius:15px; border:2px solid #B4B4B4; height:auto; width:100%;" alt="PRODUCTO de Ejemplo 14" class="img-fluid">
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Modal Ver PRODUCTO 15-->
+<div class="modal fade" id="propertyModal15" tabindex="-1" aria-labelledby="propertyModalLabel15" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="propertyModalLabel15">Fotos del PRODUCTO</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body text-center">
+                <img src="images/perros/15.png" style="border-radius:15px; border:2px solid #B4B4B4; height:auto; width:100%;" alt="PRODUCTO de Ejemplo 15" class="img-fluid">
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Modal Ver PRODUCTO 16-->
+<div class="modal fade" id="propertyModal16" tabindex="-1" aria-labelledby="propertyModalLabel16" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="propertyModalLabel16">Fotos del PRODUCTO</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body text-center">
+                <img src="images/perros/16.png" style="border-radius:15px; border:2px solid #B4B4B4; height:auto; width:100%;" alt="PRODUCTO de Ejemplo 16" class="img-fluid">
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Modal Ver PRODUCTO 17-->
+<div class="modal fade" id="propertyModal17" tabindex="-1" aria-labelledby="propertyModalLabel17" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="propertyModalLabel17">Fotos del PRODUCTO</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body text-center">
+                <img src="images/perros/17.png" style="border-radius:15px; border:2px solid #B4B4B4; height:auto; width:100%;" alt="PRODUCTO de Ejemplo 17" class="img-fluid">
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Modal Ver PRODUCTO 18-->
+<div class="modal fade" id="propertyModal18" tabindex="-1" aria-labelledby="propertyModalLabel18" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="propertyModalLabel18">Fotos del PRODUCTO</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body text-center">
+                <img src="images/perros/18.png" style="border-radius:15px; border:2px solid #B4B4B4; height:auto; width:100%;" alt="PRODUCTO de Ejemplo 18" class="img-fluid">
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Modal Ver PRODUCTO 19-->
+<div class="modal fade" id="propertyModal19" tabindex="-1" aria-labelledby="propertyModalLabel19" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="propertyModalLabel19">Fotos del PRODUCTO</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body text-center">
+                <img src="images/perros/19.png" style="border-radius:15px; border:2px solid #B4B4B4; height:auto; width:100%;" alt="PRODUCTO de Ejemplo 19" class="img-fluid">
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Modal Ver PRODUCTO 20-->
+<div class="modal fade" id="propertyModal20" tabindex="-1" aria-labelledby="propertyModalLabel20" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="propertyModalLabel20">Fotos del PRODUCTO</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body text-center">
+                <img src="images/perros/20.png" style="border-radius:15px; border:2px solid #B4B4B4; height:auto; width:100%;" alt="PRODUCTO de Ejemplo 20" class="img-fluid">
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Modal Ver PRODUCTO 21-->
+<div class="modal fade" id="propertyModal21" tabindex="-1" aria-labelledby="propertyModalLabel21" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="propertyModalLabel21">Fotos del PRODUCTO</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body text-center">
+                <img src="images/perros/21.png" style="border-radius:15px; border:2px solid #B4B4B4; height:auto; width:100%;" alt="PRODUCTO de Ejemplo 21" class="img-fluid">
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Modal Ver PRODUCTO 22-->
+<div class="modal fade" id="propertyModal22" tabindex="-1" aria-labelledby="propertyModalLabel22" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="propertyModalLabel22">Fotos del PRODUCTO</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body text-center">
+                <img src="images/perros/22.png" style="border-radius:15px; border:2px solid #B4B4B4; height:auto; width:100%;" alt="PRODUCTO de Ejemplo 22" class="img-fluid">
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Modal Ver PRODUCTO 23-->
+<div class="modal fade" id="propertyModal23" tabindex="-1" aria-labelledby="propertyModalLabel23" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="propertyModalLabel23">Fotos del PRODUCTO</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body text-center">
+                <img src="images/perros/23.png" style="border-radius:15px; border:2px solid #B4B4B4; height:auto; width:100%;" alt="PRODUCTO de Ejemplo 23" class="img-fluid">
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Modal Ver PRODUCTO 24-->
+<div class="modal fade" id="propertyModal24" tabindex="-1" aria-labelledby="propertyModalLabel24" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="propertyModalLabel24">Fotos del PRODUCTO</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body text-center">
+                <img src="images/perros/24.png" style="border-radius:15px; border:2px solid #B4B4B4; height:auto; width:100%;" alt="PRODUCTO de Ejemplo 24" class="img-fluid">
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Modal Ver PRODUCTO 25-->
+<div class="modal fade" id="propertyModal25" tabindex="-1" aria-labelledby="propertyModalLabel25" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="propertyModalLabel25">Fotos del PRODUCTO</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body text-center">
+                <img src="images/perros/25.png" style="border-radius:15px; border:2px solid #B4B4B4; height:auto; width:100%;" alt="PRODUCTO de Ejemplo 25" class="img-fluid">
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Modal Ver PRODUCTO 26-->
+<div class="modal fade" id="propertyModal26" tabindex="-1" aria-labelledby="propertyModalLabel26" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="propertyModalLabel26">Fotos del PRODUCTO</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body text-center">
+                <img src="images/perros/26.png" style="border-radius:15px; border:2px solid #B4B4B4; height:auto; width:100%;" alt="PRODUCTO de Ejemplo 26" class="img-fluid">
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Modal Ver PRODUCTO 27-->
+<div class="modal fade" id="propertyModal27" tabindex="-1" aria-labelledby="propertyModalLabel27" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="propertyModalLabel27">Fotos del PRODUCTO</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body text-center">
+                <img src="images/perros/27.png" style="border-radius:15px; border:2px solid #B4B4B4; height:auto; width:100%;" alt="PRODUCTO de Ejemplo 27" class="img-fluid">
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Modal Ver PRODUCTO 28-->
+<div class="modal fade" id="propertyModal28" tabindex="-1" aria-labelledby="propertyModalLabel28" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="propertyModalLabel28">Fotos del PRODUCTO</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body text-center">
+                <img src="images/perros/28.png" style="border-radius:15px; border:2px solid #B4B4B4; height:auto; width:100%;" alt="PRODUCTO de Ejemplo 28" class="img-fluid">
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Modal Ver PRODUCTO 29-->
+<div class="modal fade" id="propertyModal29" tabindex="-1" aria-labelledby="propertyModalLabel29" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="propertyModalLabel29">Fotos del PRODUCTO</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body text-center">
+                <img src="images/perros/29.png" style="border-radius:15px; border:2px solid #B4B4B4; height:auto; width:100%;" alt="PRODUCTO de Ejemplo 29" class="img-fluid">
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Modal Ver PRODUCTO 30-->
+<div class="modal fade" id="propertyModal30" tabindex="-1" aria-labelledby="propertyModalLabel30" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="propertyModalLabel30">Fotos del PRODUCTO</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body text-center">
+                <img src="images/perros/30.png" style="border-radius:15px; border:2px solid #B4B4B4; height:auto; width:100%;" alt="PRODUCTO de Ejemplo 30" class="img-fluid">
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Modal Ver PRODUCTO 31-->
+<div class="modal fade" id="propertyModal31" tabindex="-1" aria-labelledby="propertyModalLabel31" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="propertyModalLabel31">Fotos del PRODUCTO</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body text-center">
+                <img src="images/perros/31.png" style="border-radius:15px; border:2px solid #B4B4B4; height:auto; width:100%;" alt="PRODUCTO de Ejemplo 31" class="img-fluid">
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Modal Ver PRODUCTO 32-->
+<div class="modal fade" id="propertyModal32" tabindex="-1" aria-labelledby="propertyModalLabel32" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="propertyModalLabel32">Fotos del PRODUCTO</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body text-center">
+                <img src="images/perros/32.png" style="border-radius:15px; border:2px solid #B4B4B4; height:auto; width:100%;" alt="PRODUCTO de Ejemplo 32" class="img-fluid">
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Modal Ver PRODUCTO 33-->
+<div class="modal fade" id="propertyModal33" tabindex="-1" aria-labelledby="propertyModalLabel33" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="propertyModalLabel33">Fotos del PRODUCTO</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body text-center">
+                <img src="images/perros/33.png" style="border-radius:15px; border:2px solid #B4B4B4; height:auto; width:100%;" alt="PRODUCTO de Ejemplo 33" class="img-fluid">
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Modal Ver PRODUCTO 34-->
+<div class="modal fade" id="propertyModal34" tabindex="-1" aria-labelledby="propertyModalLabel34" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="propertyModalLabel34">Fotos del PRODUCTO</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body text-center">
+                <img src="images/perros/34.png" style="border-radius:15px; border:2px solid #B4B4B4; height:auto; width:100%;" alt="PRODUCTO de Ejemplo 34" class="img-fluid">
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Modal Ver PRODUCTO 35-->
+<div class="modal fade" id="propertyModal35" tabindex="-1" aria-labelledby="propertyModalLabel35" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="propertyModalLabel35">Fotos del PRODUCTO</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body text-center">
+                <img src="images/perros/35.png" style="border-radius:15px; border:2px solid #B4B4B4; height:auto; width:100%;" alt="PRODUCTO de Ejemplo 35" class="img-fluid">
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Modal Ver PRODUCTO 36-->
+<div class="modal fade" id="propertyModal36" tabindex="-1" aria-labelledby="propertyModalLabel36" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="propertyModalLabel36">Fotos del PRODUCTO</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body text-center">
+                <img src="images/perros/36.png" style="border-radius:15px; border:2px solid #B4B4B4; height:auto; width:100%;" alt="PRODUCTO de Ejemplo 36" class="img-fluid">
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Modal Ver PRODUCTO 37-->
+<div class="modal fade" id="propertyModal37" tabindex="-1" aria-labelledby="propertyModalLabel37" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="propertyModalLabel37">Fotos del PRODUCTO</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body text-center">
+                <img src="images/perros/37.png" style="border-radius:15px; border:2px solid #B4B4B4; height:auto; width:100%;" alt="PRODUCTO de Ejemplo 37" class="img-fluid">
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Modal Ver PRODUCTO 38-->
+<div class="modal fade" id="propertyModal38" tabindex="-1" aria-labelledby="propertyModalLabel38" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="propertyModalLabel38">Fotos del PRODUCTO</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body text-center">
+                <img src="images/perros/38.png" style="border-radius:15px; border:2px solid #B4B4B4; height:auto; width:100%;" alt="PRODUCTO de Ejemplo 38" class="img-fluid">
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Modal Ver PRODUCTO 39-->
+<div class="modal fade" id="propertyModal39" tabindex="-1" aria-labelledby="propertyModalLabel39" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="propertyModalLabel39">Fotos del PRODUCTO</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body text-center">
+                <img src="images/perros/39.png" style="border-radius:15px; border:2px solid #B4B4B4; height:auto; width:100%;" alt="PRODUCTO de Ejemplo 39" class="img-fluid">
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Modal Ver PRODUCTO 40-->
+<div class="modal fade" id="propertyModal40" tabindex="-1" aria-labelledby="propertyModalLabel40" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="propertyModalLabel40">Fotos del PRODUCTO</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body text-center">
+                <img src="images/perros/40.png" style="border-radius:15px; border:2px solid #B4B4B4; height:auto; width:100%;" alt="PRODUCTO de Ejemplo 40" class="img-fluid">
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Modal Ver PRODUCTO 41-->
+<div class="modal fade" id="propertyModal41" tabindex="-1" aria-labelledby="propertyModalLabel41" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="propertyModalLabel41">Fotos del PRODUCTO</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body text-center">
+                <img src="images/perros/41.png" style="border-radius:15px; border:2px solid #B4B4B4; height:auto; width:100%;" alt="PRODUCTO de Ejemplo 41" class="img-fluid">
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Modal Ver PRODUCTO 42-->
+<div class="modal fade" id="propertyModal42" tabindex="-1" aria-labelledby="propertyModalLabel42" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="propertyModalLabel42">Fotos del PRODUCTO</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body text-center">
+                <img src="images/perros/42.png" style="border-radius:15px; border:2px solid #B4B4B4; height:auto; width:100%;" alt="PRODUCTO de Ejemplo 42" class="img-fluid">
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Modal Ver PRODUCTO 43-->
+<div class="modal fade" id="propertyModal43" tabindex="-1" aria-labelledby="propertyModalLabel43" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="propertyModalLabel43">Fotos del PRODUCTO</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body text-center">
+                <img src="images/perros/43.png" style="border-radius:15px; border:2px solid #B4B4B4; height:auto; width:100%;" alt="PRODUCTO de Ejemplo 43" class="img-fluid">
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Modal Ver PRODUCTO 44-->
+<div class="modal fade" id="propertyModal44" tabindex="-1" aria-labelledby="propertyModalLabel44" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="propertyModalLabel44">Fotos del PRODUCTO</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body text-center">
+                <img src="images/perros/44.png" style="border-radius:15px; border:2px solid #B4B4B4; height:auto; width:100%;" alt="PRODUCTO de Ejemplo 44" class="img-fluid">
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Modal Ver PRODUCTO 45-->
+<div class="modal fade" id="propertyModal45" tabindex="-1" aria-labelledby="propertyModalLabel45" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="propertyModalLabel45">Fotos del PRODUCTO</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body text-center">
+                <img src="images/perros/45.png" style="border-radius:15px; border:2px solid #B4B4B4; height:auto; width:100%;" alt="PRODUCTO de Ejemplo 45" class="img-fluid">
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Modal Ver PRODUCTO 46-->
+<div class="modal fade" id="propertyModal46" tabindex="-1" aria-labelledby="propertyModalLabel46" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="propertyModalLabel46">Fotos del PRODUCTO</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body text-center">
+                <img src="images/perros/46.png" style="border-radius:15px; border:2px solid #B4B4B4; height:auto; width:100%;" alt="PRODUCTO de Ejemplo 46" class="img-fluid">
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Modal Ver PRODUCTO 47-->
+<div class="modal fade" id="propertyModal47" tabindex="-1" aria-labelledby="propertyModalLabel47" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="propertyModalLabel47">Fotos del PRODUCTO</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body text-center">
+                <img src="images/perros/47.png" style="border-radius:15px; border:2px solid #B4B4B4; height:auto; width:100%;" alt="PRODUCTO de Ejemplo 47" class="img-fluid">
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Modal Ver PRODUCTO 48-->
+<div class="modal fade" id="propertyModal48" tabindex="-1" aria-labelledby="propertyModalLabel48" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="propertyModalLabel48">Fotos del PRODUCTO</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body text-center">
+                <img src="images/perros/48.png" style="border-radius:15px; border:2px solid #B4B4B4; height:auto; width:100%;" alt="PRODUCTO de Ejemplo 48" class="img-fluid">
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Modal Ver PRODUCTO 49-->
+<div class="modal fade" id="propertyModal49" tabindex="-1" aria-labelledby="propertyModalLabel49" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="propertyModalLabel49">Fotos del PRODUCTO</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body text-center">
+                <img src="images/perros/49.png" style="border-radius:15px; border:2px solid #B4B4B4; height:auto; width:100%;" alt="PRODUCTO de Ejemplo 49" class="img-fluid">
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Modal Ver PRODUCTO 50-->
+<div class="modal fade" id="propertyModal50" tabindex="-1" aria-labelledby="propertyModalLabel50" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="propertyModalLabel50">Fotos del PRODUCTO</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body text-center">
+                <img src="images/perros/50.png" style="border-radius:15px; border:2px solid #B4B4B4; height:auto; width:100%;" alt="PRODUCTO de Ejemplo 50" class="img-fluid">
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Modal Ver PRODUCTO 51-->
+<div class="modal fade" id="propertyModal51" tabindex="-1" aria-labelledby="propertyModalLabel51" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="propertyModalLabel51">Fotos del PRODUCTO</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body text-center">
+                <img src="images/perros/1.1.jpg" style="border-radius:15px; border:2px solid #B4B4B4; height:auto; width:100%;" alt="PRODUCTO de Ejemplo 51" class="img-fluid">
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Modal Ver PRODUCTO 52-->
+<div class="modal fade" id="propertyModal52" tabindex="-1" aria-labelledby="propertyModalLabel52" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="propertyModalLabel52">Fotos del PRODUCTO</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body text-center">
+                <img src="images/perros/1.2.jpg" style="border-radius:15px; border:2px solid #B4B4B4; height:auto; width:100%;" alt="PRODUCTO de Ejemplo 52" class="img-fluid">
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!-- Modal Ver PRODUCTO 53-->
+<div class="modal fade" id="propertyModal53" tabindex="-1" aria-labelledby="propertyModalLabel53" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="propertyModalLabel53">Fotos del PRODUCTO</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body text-center">
+                <img src="images/perros/1.3.jpg" style="border-radius:15px; border:2px solid #B4B4B4; height:auto; width:100%;" alt="PRODUCTO de Ejemplo 53" class="img-fluid">
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Modal Ver PRODUCTO 54-->
+<div class="modal fade" id="propertyModal54" tabindex="-1" aria-labelledby="propertyModalLabel54" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="propertyModalLabel54">Fotos del PRODUCTO</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body text-center">
+                <img src="images/perros/1.4.jpg" style="border-radius:15px; border:2px solid #B4B4B4; height:auto; width:100%;" alt="PRODUCTO de Ejemplo 54" class="img-fluid">
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Modal Ver PRODUCTO 55-->
+<div class="modal fade" id="propertyModal55" tabindex="-1" aria-labelledby="propertyModalLabel55" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="propertyModalLabel55">Fotos del PRODUCTO</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body text-center">
+                <img src="images/perros/1.5.jpg" style="border-radius:15px; border:2px solid #B4B4B4; height:auto; width:100%;" alt="PRODUCTO de Ejemplo 55" class="img-fluid">
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Modal Ver PRODUCTO 56-->
+<div class="modal fade" id="propertyModal56" tabindex="-1" aria-labelledby="propertyModalLabel56" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="propertyModalLabel56">Fotos del PRODUCTO</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body text-center">
+                <img src="images/perros/1.6.jpg" style="border-radius:15px; border:2px solid #B4B4B4; height:auto; width:100%;" alt="PRODUCTO de Ejemplo 56" class="img-fluid">
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Modal Ver PRODUCTO 57-->
+<div class="modal fade" id="propertyModal57" tabindex="-1" aria-labelledby="propertyModalLabel57" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="propertyModalLabel57">Fotos del PRODUCTO</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body text-center">
+                <img src="images/perros/1.7.jpg" style="border-radius:15px; border:2px solid #B4B4B4; height:auto; width:100%;" alt="PRODUCTO de Ejemplo 57" class="img-fluid">
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Modal Ver PRODUCTO 58-->
+<div class="modal fade" id="propertyModal58" tabindex="-1" aria-labelledby="propertyModalLabel58" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="propertyModalLabel58">Fotos del PRODUCTO</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body text-center">
+                <img src="images/perros/1.8.jpg" style="border-radius:15px; border:2px solid #B4B4B4; height:auto; width:100%;" alt="PRODUCTO de Ejemplo 58" class="img-fluid">
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Modal Ver PRODUCTO 59-->
+<div class="modal fade" id="propertyModal59" tabindex="-1" aria-labelledby="propertyModalLabel59" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="propertyModalLabel59">Fotos del PRODUCTO</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body text-center">
+                <img src="images/perros/1.9.jpg" style="border-radius:15px; border:2px solid #B4B4B4; height:auto; width:100%;" alt="PRODUCTO de Ejemplo 59" class="img-fluid">
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Modal Ver PRODUCTO 60-->
+<div class="modal fade" id="propertyModal60" tabindex="-1" aria-labelledby="propertyModalLabel60" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="propertyModalLabel60">Fotos del PRODUCTO</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body text-center">
+                <img src="images/perros/1.10.jpg" style="border-radius:15px; border:2px solid #B4B4B4; height:auto; width:100%;" alt="PRODUCTO de Ejemplo 60" class="img-fluid">
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+       <!-- Footer -->
+       <section id="Contacto" class="contacto-section">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-6 col-md-12 text-center">
+                    <br>
+                    <!-- Mover QR 20px a la izquierda -->
+                    <img src="images/contacto/qrPp.jpeg" class="qr-img" style="margin-left: -30px;">
+                </div>
+            </div>
+            <!-- Redes sociales -->
+            <div class="row">
+                <div class="col-12 text-center">
+                    <!-- Contenedor para las imágenes de redes sociales -->
+                   <div class="social-icons" style="margin-bottom: 10px;">
+                        <a href="https://www.instagram.com/mr2024puppy?igsh=MTAxZjRubmNjZjEybA=="><img src="images/contacto/instagram.png" alt="Instagram" style="width: 40px; margin: 0 10px;"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script>
+        // Formatear precios
+        function formatPrice(price) {
+            return price.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ".");
+        }
+    
+        const elementosParaFormatear = document.querySelectorAll('.precio-formatear');
+        elementosParaFormatear.forEach(function (elemento) {
+            const precioSinFormato = parseFloat(elemento.textContent);
+            elemento.textContent = '$ ' + formatPrice(precioSinFormato) + ' COP';
+        });
+    
+        // Inicializar la barra de precio con el precio más alto
+        const inputRange = document.getElementById('input');
+        const propertyItems = document.querySelectorAll('.property-item');
+    
+        let maxPrice = 0;
+        propertyItems.forEach(function (propertyItem) {
+            const propertyPrice = parseFloat(propertyItem.dataset.price);
+            if (propertyPrice > maxPrice) {
+                maxPrice = propertyPrice;
+            }
+        });
+    
+        inputRange.max = maxPrice;
+        inputRange.value = maxPrice;
+    
+        // Actualizar etiqueta de precio
+        function formatearComoMoneda(valorNumerico) {
+            return valorNumerico.toLocaleString("es-CO", {
+                style: "currency",
+                currency: "COP",
+                minimumFractionDigits: 0,
+                maximumFractionDigits: 0
+            });
+        }
+    
+        function actualizarEtiqueta() {
+            var valorNumerico = parseFloat(inputRange.value);
+            if (!isNaN(valorNumerico)) {
+                etiqueta.innerHTML = formatearComoMoneda(valorNumerico);
+            } else {
+                etiqueta.innerHTML = "Valor no válido";
+            }
+        }
+    
+        const etiqueta = document.querySelector('#etiqueta');
+        actualizarEtiqueta();
+        inputRange.addEventListener('input', actualizarEtiqueta, false);
+    
+        // Filtrar productos por precio y palabra clave
+        function filterProperties() {
+            const searchTerm = searchInput.value.toLowerCase();
+            const selectedPrice = parseFloat(inputRange.value);
+            propertyItems.forEach(function (propertyItem) {
+                const propertyPrice = parseFloat(propertyItem.dataset.price);
+                const propertyName = propertyItem.querySelector('h3').textContent.toLowerCase();
+    
+                // Verifica si el producto cumple con el precio y la búsqueda
+                if (propertyPrice <= selectedPrice && propertyName.includes(searchTerm)) {
+                    propertyItem.style.display = 'block'; // Muestra el producto
+                } else {
+                    propertyItem.style.display = 'none'; // Oculta el producto
+                }
+            });
+        }
+    
+        const searchInput = document.querySelector('.form-control[type="search"]');
+        searchInput.addEventListener('input', filterProperties);
+        inputRange.addEventListener('input', filterProperties);
+    </script>
+    
+</body>
+</html>

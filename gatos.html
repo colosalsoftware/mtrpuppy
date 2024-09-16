@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="static/style.css"> <!-- Asegúrate de que styles.css esté en el mismo nivel que images -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="icon" href="images/favicon.png" type="image/x-icon">
+    <title>Comprar</title>
+</head>
+<body style="overflow-x: hidden;">
+    <!-- Navbar -->
+   <nav class="navbar navbar-expand-lg navbar-light" style="height: 100px; background-color: #ffffff; border-bottom: 2px solid #ccc;">
+        <a class="navbar-brand" href="index.html">
+            <img src="images/logo_puppy.png" alt="Logo MrtPuppy" id="logolargo" class="logo-icon" style="width:250px;">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="modal" data-target="#menuModal" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation" style="background-color: white;">
+            <span class="navbar-toggler-icon" style="background-color: white;"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="about.html" style="color: rgb(102, 51, 51); font-family: 'Arnorg', sans-serif;">NOSOTROS</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html" style="color: rgb(102, 51, 51);font-family: 'Arnorg', sans-serif;">PRODUCTOS</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#Contacto" style="color: rgb(102, 51, 51);font-family: 'Arnorg', sans-serif;">CONTACTO</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Modal Menú -->
+    <div class="modal fade" id="menuModal" tabindex="-1" aria-labelledby="menuModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="menuModalLabel">Menú</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="about.html">NOSOTROS</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">PRODUCTOS</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#Contacto">CONTACTO</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ========================= SECTION PAGETOP ========================= -->
+    <section class="section-pagetop bg" style="background-color: #e0e0e0;">
+        <div class="container-fluid" style="background-color: #35363A; text-align: center; justify-content: center; padding: 20px;">
+            <form method="GET" action="buscar.html" class="form-inline d-flex justify-content-center align-items-center flex-wrap">
+                <input class="form-control mr-sm-2 mb-2 mb-sm-0" type="search" name="q" placeholder="Buscar PRODUCTO..." aria-label="Buscar" style="width: 100%; max-width: 400px;">
+                <div class="form-group ml-3 mb-2 mb-sm-0">
+                    <label for="input" style="color: #FCE88D;">¿Cuál es tu Presupuesto Máximo?</label>
+                    <input id="input" type="range" value="0" min="0" max="0" class="form-control-range" style="width: 200px;">
+                    <div id="etiqueta" style="color: #FCE88D;"></div>
+                </div>
+            </form>
+        </div> <!-- container //  -->
+    </section>
+    <!-- ========================= SECTION INTRO END// ========================= -->
+    <div class="container-fluid" style="background-color: #e1e1e1; padding:20px;">
+        <section class="productos-section">
+            <img src="images/gatos/productos_en_venta_gatos.png" alt="Título Productos" style="min-width: 40%; height: auto;">
+            
+        </section>      
+    </div>
+    
+    <!-- ========================= SECTION CONTENT ========================= -->
+    <div class="container">
+        <div class="row">
+                <!-- ========================= 1 ========================= -->
+            <div class="col-lg-4 col-md-4 col-sm-6 col-12 property-item" data-price="20000" data-is-furniture="true" style="margin-top: 20px; margin-bottom: 20px;">
+                <div class="img-location-agency border-box">
+                    <div class="img-wrapper" style="background-image: url('images/gatos/51.png'); background-size: cover; background-position: center;">
+                    </div>
+                    <div class="texto-locations">
+                        <img src="images/gatos/51.png" style="border:2px solid #B4B4B4; text-align: center; height:300px; width:100%;" alt="PRODUCTO de Ejemplo 26" class="img-fluid">
+                        <h3 style="text-align: center;">Rascador Colgante</h3>
+                        <h5 class="precio-formatear" style="text-align: center;">20000</h5>
+                        <div class="row">
+                            <div class="col-md-6" style="text-align: center;">
+                                <a href="#" class="btn" style="background-color: rgb(102, 51, 51); color: rgb(255, 190, 4); font-weight: bold; width: 95%; padding:10px 8px;" data-toggle="modal" data-target="#propertyModal1">VER PRODUCTO</a>
+                            </div>  
+                            <div class="col-md-6" style="text-align: center;">
+                                <a href="https://wa.me/573207028443?text=Holaa,%20estoy%20interesado%20en%20el%20producto:%20Rascador%20Colgante" class="btn" style="background-color: rgb(255, 190, 4); color: rgb(102, 51, 51); font-weight: bold; width: 95%; padding: 10px;">LO QUIERO!</a>
+                            </div>  
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- ========================= 2 ========================= -->
+
+            <div class="col-lg-4 col-md-4 col-sm-6 col-12 property-item" data-price="25000" data-is-furniture="true" style="margin-top: 20px; margin-bottom: 20px;">
+                <div class="img-location-agency border-box">
+                    <div class="img-wrapper" style="background-image: url('images/gatos/52.png'); background-size: cover; background-position: center;">
+                    </div>
+                    <div class="texto-locations">
+                        <img src="images/gatos/52.png" style="border:2px solid #B4B4B4; text-align: center; height:300px; width:100%;" alt="PRODUCTO de Ejemplo 52" class="img-fluid">
+                        <h3 style="text-align: center;">Rascador Pie Pequeño</h3>
+                        <h5 class="precio-formatear" style="text-align: center;">25000</h5>
+                        <div class="row">
+                            <div class="col-md-6" style="text-align: center;">
+                                <a href="#" class="btn" style="background-color: rgb(102, 51, 51); color: rgb(255, 190, 4); font-weight: bold; width: 95%; padding: 10px 8px;" data-toggle="modal" data-target="#propertyModal2">VER PRODUCTO</a>
+                            </div>  
+                            <div class="col-md-6" style="text-align: center;">
+                                <a href="https://wa.me/573207028443?text=Holaa,%20estoy%20interesado%20en%20el%20producto:%20Rascador%20Pie%20Pequeño" class="btn" style="background-color: rgb(255, 190, 4); color: rgb(102, 51, 51); font-weight: bold; width: 95%; padding: 10px;">LO QUIERO!</a>
+                            </div> 
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- ========================= 3 ========================= -->
+            <div class="col-lg-4 col-md-4 col-sm-6 col-12 property-item" data-price="11000" data-is-furniture="true" style="margin-top: 20px; margin-bottom: 20px;">
+                <div class="img-location-agency border-box">
+                    <div class="img-wrapper" style="background-image: url('images/gatos/53.png'); background-size: cover; background-position: center;">
+                    </div>
+                    <div class="texto-locations">
+                        <img src="images/gatos/53.png" style="border:2px solid #B4B4B4; text-align: center; height:300px; width:100%;" alt="PRODUCTO de Ejemplo 53" class="img-fluid">
+                        <h3 style="text-align: center;">Juguete Gato Grande</h3>
+                        <h5 class="precio-formatear" style="text-align: center;">11000</h5>
+                        <div class="row">
+                            <div class="col-md-6" style="text-align: center;">
+                                <a href="#" class="btn" style="background-color: rgb(102, 51, 51); color: rgb(255, 190, 4); font-weight: bold; width: 95%; padding: 10px 8px;" data-toggle="modal" data-target="#propertyModal3">VER PRODUCTO</a>
+                            </div>  
+                            <div class="col-md-6" style="text-align: center;">
+                                <a href="https://wa.me/573207028443?text=Holaa,%20estoy%20interesado%20en%20el%20producto:%20Juguete%20Gato%20Grande" class="btn" style="background-color: rgb(255, 190, 4); color: rgb(102, 51, 51); font-weight: bold; width: 95%; padding: 10px;">LO QUIERO!</a>
+                            </div>  
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- ========================= 4 ========================= -->
+            <div class="col-lg-4 col-md-4 col-sm-6 col-12 property-item" data-price="6000" data-is-furniture="true" style="margin-top: 20px; margin-bottom: 20px;">
+                <div class="img-location-agency border-box">
+                    <div class="img-wrapper" style="background-image: url('images/gatos/54.png'); background-size: cover; background-position: center;">
+                    </div>
+                    <div class="texto-locations">
+                        <img src="images/gatos/54.png" style="border:2px solid #B4B4B4; text-align: center; height:300px; width:100%;" alt="PRODUCTO de Ejemplo 54" class="img-fluid">
+                        <h3 style="text-align: center;">Juguete Gato Pequeña</h3>
+                        <h5 class="precio-formatear" style="text-align: center;">6000</h5>
+                        <div class="row">
+                            <div class="col-md-6" style="text-align: center;">
+                                <a href="#" class="btn" style="background-color: rgb(102, 51, 51); color: rgb(255, 190, 4); font-weight: bold; width: 95%; padding: 10px 8px;" data-toggle="modal" data-target="#propertyModal4">VER PRODUCTO</a>
+                            </div>  
+                            <div class="col-md-6" style="text-align: center;">
+                                <a href="https://wa.me/573207028443?text=Holaa,%20estoy%20interesado%20en%20el%20producto:%20Juguete%20Gato%20Pequeña" class="btn" style="background-color: rgb(255, 190, 4); color: rgb(102, 51, 51); font-weight: bold; width: 95%; padding: 10px;">LO QUIERO!</a>
+                            </div> 
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- ========================= 5 ========================= -->
+            <div class="col-lg-4 col-md-4 col-sm-6 col-12 property-item" data-price="11000" data-is-furniture="true" style="margin-top: 20px; margin-bottom: 20px;">
+                <div class="img-location-agency border-box">
+                    <div class="img-wrapper" style="background-image: url('images/gatos/55.png'); background-size: cover; background-position: center;">
+                    </div>
+                    <div class="texto-locations">
+                        <img src="images/gatos/55.png" style="border:2px solid #B4B4B4; text-align: center; height:300px; width:100%;" alt="PRODUCTO de Ejemplo 55" class="img-fluid">
+                        <h3 style="text-align: center;">Vara Gato</h3>
+                        <h5 class="precio-formatear" style="text-align: center;">11000</h5>
+                        <div class="row">
+                            <div class="col-md-6" style="text-align: center;">
+                                <a href="#" class="btn" style="background-color: rgb(102, 51, 51); color: rgb(255, 190, 4); font-weight: bold; width: 95%; padding: 10px 8px;" data-toggle="modal" data-target="#propertyModal5">VER PRODUCTO</a>
+                            </div>  
+                            <div class="col-md-6" style="text-align: center;">
+                                <a href="https://wa.me/573207028443?text=Holaa,%20estoy%20interesado%20en%20el%20producto:%20Vara%20Gato" class="btn" style="background-color: rgb(255, 190, 4); color: rgb(102, 51, 51); font-weight: bold; width: 95%; padding: 10px;">LO QUIERO!</a>
+                            </div> 
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- ========================= 6 ========================= -->
+            <div class="col-lg-4 col-md-4 col-sm-6 col-12 property-item" data-price="7000" data-is-furniture="true" style="margin-top: 20px; margin-bottom: 20px;">
+                <div class="img-location-agency border-box">
+                    <div class="img-wrapper" style="background-image: url('images/gatos/56.png'); background-size: cover; background-position: center;">
+                    </div>
+                    <div class="texto-locations">
+                        <img src="images/gatos/56.png" style="border:2px solid #B4B4B4; text-align: center; height:300px; width:100%;" alt="PRODUCTO de Ejemplo 56" class="img-fluid">
+                        <h3 style="text-align: center;">Bolita 3</h3>
+                        <h5 class="precio-formatear" style="text-align: center;">7000</h5>
+                        <div class="row">
+                            <div class="col-md-6" style="text-align: center;">
+                                <a href="#" class="btn" style="background-color: rgb(102, 51, 51); color: rgb(255, 190, 4); font-weight: bold; width: 95%; padding: 10px 8px;" data-toggle="modal" data-target="#propertyModal6">VER PRODUCTO</a>
+                            </div>  
+                            <div class="col-md-6" style="text-align: center;">
+                                <a href="https://wa.me/573207028443?text=Holaa,%20estoy%20interesado%20en%20el%20producto:%20Bolita%203" class="btn" style="background-color: rgb(255, 190, 4); color: rgb(102, 51, 51); font-weight: bold; width: 95%; padding: 10px;">LO QUIERO!</a>
+                            </div> 
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- ========================= 7 ========================= -->
+            <div class="col-lg-4 col-md-4 col-sm-6 col-12 property-item" data-price="8000" data-is-furniture="true" style="margin-top: 20px; margin-bottom: 20px;">
+                <div class="img-location-agency border-box">
+                    <div class="img-wrapper" style="background-image: url('images/gatos/57.png'); background-size: cover; background-position: center;">
+                    </div>
+                    <div class="texto-locations">
+                        <img src="images/gatos/57.png" style="border:2px solid #B4B4B4; text-align: center; height:300px; width:100%;" alt="PRODUCTO de Ejemplo 57" class="img-fluid">
+                        <h3 style="text-align: center;">Mano de Mono</h3>
+                        <h5 class="precio-formatear" style="text-align: center;">8000</h5>
+                        <div class="row">
+                            <div class="col-md-6" style="text-align: center;">
+                                <a href="#" class="btn" style="background-color: rgb(102, 51, 51); color: rgb(255, 190, 4); font-weight: bold; width: 95%; padding: 10px 8px;" data-toggle="modal" data-target="#propertyModal7">VER PRODUCTO</a>
+                            </div>  
+                            <div class="col-md-6" style="text-align: center;">
+                                <a href="https://wa.me/573207028443?text=Holaa,%20estoy%20interesado%20en%20el%20producto:%20Mano%20de%20Mono" class="btn" style="background-color: rgb(255, 190, 4); color: rgb(102, 51, 51); font-weight: bold; width: 95%; padding: 10px;">LO QUIERO!</a>
+                            </div> 
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- ========================= 8 ========================= -->
+            <div class="col-lg-4 col-md-4 col-sm-6 col-12 property-item" data-price="8000" data-is-furniture="true" style="margin-top: 20px; margin-bottom: 20px;">
+                <div class="img-location-agency border-box">
+                    <div class="img-wrapper" style="background-image: url('images/gatos/58.png'); background-size: cover; background-position: center;">
+                    </div>
+                    <div class="texto-locations">
+                        <img src="images/gatos/58.png" style="border:2px solid #B4B4B4; text-align: center; height:300px; width:100%;" alt="PRODUCTO de Ejemplo 58" class="img-fluid">
+                        <h3 style="text-align: center;">Desestresante para Gato</h3>
+                        <h5 class="precio-formatear" style="text-align: center;">8000</h5>
+                        <div class="row">
+                            <div class="col-md-6" style="text-align: center;">
+                                <a href="#" class="btn" style="background-color: rgb(102, 51, 51); color: rgb(255, 190, 4); font-weight: bold; width: 95%; padding: 10px 8px;" data-toggle="modal" data-target="#propertyModal8">VER PRODUCTO</a>
+                            </div>  
+                            <div class="col-md-6" style="text-align: center;">
+                                <a href="https://wa.me/573207028443?text=Holaa,%20estoy%20interesado%20en%20el%20producto:%20Desestresante%20para%20Gato" class="btn" style="background-color: rgb(255, 190, 4); color: rgb(102, 51, 51); font-weight: bold; width: 95%; padding: 10px;">LO QUIERO!</a>
+                            </div> 
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+        </div>
+    </div>
+    <!-- Modal Ver PRODUCTO 1-->
+    <div class="modal fade" id="propertyModal1" tabindex="-1" aria-labelledby="propertyModalLabel1" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="propertyModalLabel1">Fotos del PRODUCTO</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body text-center">
+                    <img src="images/gatos/51.png" style="border-radius:15px; border:2px solid #B4B4B4; height:auto; width:100%;" alt="PRODUCTO de Ejemplo 51" class="img-fluid">
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal Ver PRODUCTO 2-->
+    <div class="modal fade" id="propertyModal2" tabindex="-1" aria-labelledby="propertyModalLabel2" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="propertyModalLabel2">Fotos del PRODUCTO</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body text-center">
+                    <img src="images/gatos/52.png" style="border-radius:15px; border:2px solid #B4B4B4; height:auto; width:100%;" alt="PRODUCTO de Ejemplo 52" class="img-fluid">
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal Ver PRODUCTO 3-->
+    <div class="modal fade" id="propertyModal3" tabindex="-1" aria-labelledby="propertyModalLabel3" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="propertyModalLabel3">Fotos del PRODUCTO</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body text-center">
+                    <img src="images/gatos/53.png" style="border-radius:15px; border:2px solid #B4B4B4; height:auto; width:100%;" alt="PRODUCTO de Ejemplo 53" class="img-fluid">
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal Ver PRODUCTO 4-->
+    <div class="modal fade" id="propertyModal4" tabindex="-1" aria-labelledby="propertyModalLabel4" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="propertyModalLabel4">Fotos del PRODUCTO</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body text-center">
+                    <img src="images/gatos/54.png" style="border-radius:15px; border:2px solid #B4B4B4; height:auto; width:100%;" alt="PRODUCTO de Ejemplo 54" class="img-fluid">
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal Ver PRODUCTO 5-->
+    <div class="modal fade" id="propertyModal5" tabindex="-1" aria-labelledby="propertyModalLabel5" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="propertyModalLabel5">Fotos del PRODUCTO</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body text-center">
+                    <img src="images/gatos/55.png" style="border-radius:15px; border:2px solid #B4B4B4; height:auto; width:100%;" alt="PRODUCTO de Ejemplo 55" class="img-fluid">
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal Ver PRODUCTO 6-->
+    <div class="modal fade" id="propertyModal6" tabindex="-1" aria-labelledby="propertyModalLabel6" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="propertyModalLabel6">Fotos del PRODUCTO</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body text-center">
+                    <img src="images/gatos/56.png" style="border-radius:15px; border:2px solid #B4B4B4; height:auto; width:100%;" alt="PRODUCTO de Ejemplo 56" class="img-fluid">
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal Ver PRODUCTO 7-->
+    <div class="modal fade" id="propertyModal7" tabindex="-1" aria-labelledby="propertyModalLabel7" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="propertyModalLabel1">Fotos del PRODUCTO</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body text-center">
+                    <img src="images/gatos/57.png" style="border-radius:15px; border:2px solid #B4B4B4; height:auto; width:100%;" alt="PRODUCTO de Ejemplo 57" class="img-fluid">
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal Ver PRODUCTO 8-->
+    <div class="modal fade" id="propertyModal8" tabindex="-1" aria-labelledby="propertyModalLabel8" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="propertyModalLabel8">Fotos del PRODUCTO</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body text-center">
+                    <img src="images/gatos/58.png" style="border-radius:15px; border:2px solid #B4B4B4; height:auto; width:100%;" alt="PRODUCTO de Ejemplo 58" class="img-fluid">
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+
+       <!-- Footer -->
+       <section id="Contacto" class="contacto-section">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-6 col-md-12 text-center">
+                    <br>
+                    <!-- Mover QR 20px a la izquierda -->
+                    <img src="images/contacto/qrPp.jpeg" class="qr-img" style="margin-left: -30px;">
+                </div>
+            </div>
+            <!-- Redes sociales -->
+            <div class="row">
+                <div class="col-12 text-center">
+                    <!-- Contenedor para las imágenes de redes sociales -->
+                   <div class="social-icons" style="margin-bottom: 10px;">
+                        <a href="https://www.instagram.com/mr2024puppy?igsh=MTAxZjRubmNjZjEybA=="><img src="images/contacto/instagram.png" alt="Instagram" style="width: 40px; margin: 0 10px;"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script>
+        // Formatear precios
+        function formatPrice(price) {
+            return price.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ".");
+        }
+    
+        const elementosParaFormatear = document.querySelectorAll('.precio-formatear');
+        elementosParaFormatear.forEach(function (elemento) {
+            const precioSinFormato = parseFloat(elemento.textContent);
+            elemento.textContent = '$ ' + formatPrice(precioSinFormato) + ' COP';
+        });
+    
+        // Inicializar la barra de precio con el precio más alto
+        const inputRange = document.getElementById('input');
+        const propertyItems = document.querySelectorAll('.property-item');
+    
+        let maxPrice = 0;
+        propertyItems.forEach(function (propertyItem) {
+            const propertyPrice = parseFloat(propertyItem.dataset.price);
+            if (propertyPrice > maxPrice) {
+                maxPrice = propertyPrice;
+            }
+        });
+    
+        inputRange.max = maxPrice;
+        inputRange.value = maxPrice;
+    
+        // Actualizar etiqueta de precio
+        function formatearComoMoneda(valorNumerico) {
+            return valorNumerico.toLocaleString("es-CO", {
+                style: "currency",
+                currency: "COP",
+                minimumFractionDigits: 0,
+                maximumFractionDigits: 0
+            });
+        }
+    
+        function actualizarEtiqueta() {
+            var valorNumerico = parseFloat(inputRange.value);
+            if (!isNaN(valorNumerico)) {
+                etiqueta.innerHTML = formatearComoMoneda(valorNumerico);
+            } else {
+                etiqueta.innerHTML = "Valor no válido";
+            }
+        }
+    
+        const etiqueta = document.querySelector('#etiqueta');
+        actualizarEtiqueta();
+        inputRange.addEventListener('input', actualizarEtiqueta, false);
+    
+        // Filtrar productos por precio y palabra clave
+        function filterProperties() {
+            const searchTerm = searchInput.value.toLowerCase();
+            const selectedPrice = parseFloat(inputRange.value);
+            propertyItems.forEach(function (propertyItem) {
+                const propertyPrice = parseFloat(propertyItem.dataset.price);
+                const propertyName = propertyItem.querySelector('h3').textContent.toLowerCase();
+    
+                // Verifica si el producto cumple con el precio y la búsqueda
+                if (propertyPrice <= selectedPrice && propertyName.includes(searchTerm)) {
+                    propertyItem.style.display = 'block'; // Muestra el producto
+                } else {
+                    propertyItem.style.display = 'none'; // Oculta el producto
+                }
+            });
+        }
+    
+        const searchInput = document.querySelector('.form-control[type="search"]');
+        searchInput.addEventListener('input', filterProperties);
+        inputRange.addEventListener('input', filterProperties);
+    </script>
+    
+</body>
+</html>
